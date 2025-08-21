@@ -7,6 +7,7 @@ use App\Http\Controllers\backend\ModuleController;
 use App\Http\Controllers\backend\RoleController;
 use App\Http\Controllers\backend\ParametreController;
 use App\Http\Controllers\backend\PermissionController;
+use App\Http\Controllers\SupportController;
 
 Route::fallback(function () {
     return view('backend.utility.auth-404-basic');
@@ -71,6 +72,9 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
     });
 });
 
-Route::get('/index',function(){
-    return view('index');
+Route::prefix('ticafrique')->name('ticafrique.')->controller(SupportController::class)->group(function () {
+    Route::get('/index', 'index')->name('index');
+    Route::get('/about','about')->name('about');
+    Route::get('/projects','projects')->name('projects');
+    Route::get('/contacts','contacts')->name('contacts');
 });

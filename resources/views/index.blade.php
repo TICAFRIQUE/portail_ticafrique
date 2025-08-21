@@ -1,577 +1,298 @@
-<!DOCTYPE html>
-<html>
+@extends('front.layouts.base')
 
-<head>
-    <!-- basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- mobile metas -->
-    <!-- site metas -->
-    <title>Netic</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="site/css/style.css">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="site/css/responsive.css">
-    <!-- fevicon -->
-    <link rel="icon" href="site/images/fevicon.png" type="image/gif" />
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Sen:400,700,800&display=swap" rel="stylesheet">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="site/css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-</head>
 
-<body>
-    <div class="header_section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand"href="index.html"><img src="site/images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hosting.html">Hosting</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="testimonial.html">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="domain.html">Domain</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                    </form>
-                </div>
-            </nav>
-            <div class="custom_bg">
-                <div class="custom_menu">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="hosting.html">Hosting</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="domain.html">Domain</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <form class="d-flex my-2 my-lg-0">
-                    <div class="search_btn">
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- banner section start -->
-        <div class="banner_section layout_padding">
-            <div id="my_slider" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                                    <div class="read_bt"><a href="#">Read More</a></div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="banner_img"><img src="site/images/banner-img.png"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                                    <div class="read_bt"><a href="#">Read More</a></div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="banner_img"><img src="site/images/banner-img.png"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                                    <div class="read_bt"><a href="#">Read More</a></div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="banner_img"><img src="site/images/banner-img.png"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#my_slider" role="button" data-bs-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="carousel-control-next" href="#my_slider" role="button" data-bs-slide="next">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
-        </div>
-        <!-- banner section end -->
-    </div>
-    <!-- header section end -->
-    <!-- domain section start -->
-    <div class="domain_section">
-        <div class="container">
-            <div class="domain_box">
-                <div class="domain_rate">
-                    <ul>
-                        <li><a href="#"><span style="color: #8b2791;">.com</span> $11.25</a></li>
-                        <li><a href="#"><span style="color: #8b2791;">.org</span> $12.50</a></li>
-                        <li><a href="#"><span style="color: #8b2791;">.net</span> $14.50 </a></li>
-                        <li><a href="#"><span style="color: #8b2791;">.com</span> $11.50</a></li>
-                        <li><a href="#"><span style="color: #8b2791;">info</span> $9.00</a></li>
-                        <li><a href="#"><span style="color: #8b2791;">xyz</span> $0.99</a></li>
-                    </ul>
-                </div>
-                <div class="domain_main">
-                    <form class="example" action="#">
-                        <input type="text" placeholder="Search Domain.." name="Search Domain..">
-                        <button type="submit">Search Now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- domain section end -->
-    <!-- about section start -->
-    <div class="about_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="about_box">
-                        <div class="icon_1"><img src="site/images/icon-1.png"></div>
-                        <h3 class="faster_text">Faster Loading Speed</h3>
-                        <p class="lorem_text">ike readable English. Many desktop publishing packages and web page
-                            editors now use Lorem Ipsum as their default model text,</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="about_box">
-                        <div class="icon_1"><img src="site/images/icon-2.png"></div>
-                        <h3 class="faster_text">Faster Loading Speed</h3>
-                        <p class="lorem_text">ike readable English. Many desktop publishing packages and web page
-                            editors now use Lorem Ipsum as their default model text,</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="about_box">
-                        <div class="icon_1"><img src="site/images/icon-3.png"></div>
-                        <h3 class="faster_text">Faster Loading Speed</h3>
-                        <p class="lorem_text">ike readable English. Many desktop publishing packages and web page
-                            editors now use Lorem Ipsum as their default model text,</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about section end -->
-    <!-- hosting section start -->
-    <div class="hosting_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="hosting_taital">GRID WEB HOSTING OVERVIEW</h1>
-                    <p class="hosting_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                    <div class="click_bt"><a href="#">Click Here</a></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="hosting_img"><img src="site/images/hosting-img.png"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- hosting section end -->
-    <!-- pricing section start -->
-    <div class="pricing_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="pricing_taital">Our Pricing Plan</h1>
-                    <p class="pricing_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore </p>
-                </div>
-            </div>
-            <div class="pricing_section_2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="pricing_box">
-                            <h3 class="number_text">1</h3>
-                            <h5 class="cloud_text">Cloud Hosting</h5>
-                            <h1 class="dolor_text">$19</h1>
-                            <h3 class="monthly_text">MONTHLY</h3>
-                            <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                            <div class="signup_bt"><a href="#">Sign Up</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="pricing_box">
-                            <h3 class="number_text">2</h3>
-                            <h5 class="cloud_text">VPS Hosting</h5>
-                            <h1 class="dolor_text">$19</h1>
-                            <h3 class="monthly_text">MONTHLY</h3>
-                            <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                            <div class="signup_bt"><a href="#">Sign Up</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="pricing_box">
-                            <h3 class="number_text">3</h3>
-                            <h5 class="cloud_text">Shared Hosting</h5>
-                            <h1 class="dolor_text">$19</h1>
-                            <h3 class="monthly_text">MONTHLY</h3>
-                            <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                            <div class="signup_bt"><a href="#">Sign Up</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- pricing section end -->
-    <!-- services section start -->
-    <div class="services_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="services_taital">Our Services</h1>
-                    <p class="services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore </p>
-                </div>
-            </div>
-            <div class="services_section_2">
-                <div id="main_slider"class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="images/icon-4.png" class="image_1">
-                                            <img src="images/icon-7.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">WordPress Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-5.png" class="image_1">
-                                            <img src="site/images/icon-5.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Cloud Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-6.png" class="image_1">
-                                            <img src="site/images/icon-9.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-4.png" class="image_1">
-                                            <img src="site/images/icon-7.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">WordPress Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-5.png" class="image_1">
-                                            <img src="site/images/icon-5.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Cloud Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-6.png" class="image_1">
-                                            <img src="site/images/icon-9.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-4.png" class="image_1">
-                                            <img src="site/images/icon-7.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">WordPress Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-5.png" class="image_1">
-                                            <img src="site/images/icon-5.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Cloud Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="service_box">
-                                        <div class="services_icon">
-                                            <img src="site/images/icon-6.png" class="image_1">
-                                            <img src="site/images/icon-9.png" class="image_2">
-                                        </div>
-                                        <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                        <p class="opposed_text">opposed to using 'Content here, content here', making
-                                            it look like readable</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#main_slider" role="button" data-bs-slide="prev">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#main_slider" role="button" data-bs-slide="next">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- services section end -->
-    <!-- testimonial section start -->
-    <div class="testimonial_section layout_padding">
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="testimonial_taital">Testimonials</h1>
-                                <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore </p>
-                                <div class="testimonial_section_2">
-                                    <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                    <div class="quick_img"><img src="site/images/quick-icon.png"></div>
-                                </div>
-                                <div class="client_img"><img src="site/images/client-img.png"></div>
-                                <h4 class="client_name">Joy Mori</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="testimonial_taital">Testimonials</h1>
-                                <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore </p>
-                                <div class="testimonial_section_2">
-                                    <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                    <div class="quick_img"><img src="site/images/quick-icon.png"></div>
-                                </div>
-                                <div class="client_img"><img src="site/images/client-img.png"></div>
-                                <h4 class="client_name">Joy Mori</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="testimonial_taital">Testimonials</h1>
-                                <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore </p>
-                                <div class="testimonial_section_2">
-                                    <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem
-                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                    <div class="quick_img"><img src="site/images/quick-icon.png"></div>
-                                </div>
-                                <div class="client_img"><img src="site/images/client-img.png"></div>
-                                <h4 class="client_name">Joy Mori</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- testimonial section end -->
-    <!-- newslatter section start -->
-    <div class="newslatter_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="newslatter_taital">Subscribe Newsletter</h1>
-                    <form class="example" action="#">
-                        <input type="text" class="mail" placeholder="Enter Your email" name="Enter Your email">
-                        <button type="submit">Sbscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- newslatter section end -->
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 class="footer_text">Useful links</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li class="active"><a href="index.html"><span class="angle_icon active"><i
-                                            class="fa fa-arrow-right" aria-hidden="true"></i></span> Home</a></li>
-                            <li><a href="#"><span class="angle_icon"><i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></span> About</a></li>
-                            <li><a href="services.html"><span class="angle_icon"><i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></span> Services</a></li>
-                            <li><a href="domain.html"><span class="angle_icon"><i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></span> Domain</a></li>
-                            <li><a href="testimonial.html"><span class="angle_icon"><i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></span> Testimonial</a></li>
-                            <li><a href="contact.html"><span class="angle_icon"><i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></span> Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <h3 class="footer_text">Address</h3>
-                    <div class="location_text">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="padding_left_10"><i class="fa fa-map-marker"
-                                            aria-hidden="true"></i></span>It is a long established fact that a<br>
-                                    reader will be distracted</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="padding_left_10"><i class="fa fa-phone"
-                                            aria-hidden="true"></i></span>(+71) 1234567890<br>(+71) 1234567890
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="padding_left_10"><i class="fa fa-envelope"
-                                            aria-hidden="true"></i></span>demo@gmail.com
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="footer_main">
-                        <h3 class="footer_text">Find Us</h3>
-                        <p class="dummy_text">more-or-less normal distribution </p>
-                        <div class="social_icon">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html
-                    Templates</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
-        </div>
-    </div>
-    <!-- copyright section end -->
-    <!-- Javascript files-->
-    <!-- sidebar -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    \1
-</body>
+@section('content')
+    @include('front.sections.carousel')
 
-</html>
+    <!-- Fact Start -->
+    <div class="container-fluid style-bg  py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">99</h1>
+                        <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">25</h1>
+                        <h5 class="text-white mt-1">Thousands of successful business</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">120</h1>
+                        <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value">5</h1>
+                        <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    @include('front.sections.about')
+
+
+    @include('front.sections.services')
+
+
+
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog py-5 mb-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Blog</h5>
+                <h1>Latest Blog & News</h1>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded">
+                        <img src="{{ asset('site/img/blog-1.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Web Design</span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
+                                <a href="#" class="btn text-white">Read More</a>
+                            </div>
+                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
+                                <div class="blog-icon-1">
+                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                </div>
+                                <div class="blog-icon-2">
+                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="{{ asset('site/img/admin.jpg') }}"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">By Daniel Martin</h5>
+                            <span class="text-secondary">24 March 2023</span>
+                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
+                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                            <a href="#" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324
+                                    Share</small></a>
+                            <a href="#" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5
+                                    Comments</small></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="blog-item position-relative bg-light rounded">
+                        <img src="{{ asset('site/img/blog-2.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Development</span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
+                                <a href="#" class="btn text-white ">Read More</a>
+                            </div>
+                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
+                                <div class="blog-icon-1">
+                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                </div>
+                                <div class="blog-icon-2">
+                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="{{ asset('site/img/admin.jpg') }}"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">By Daniel Martin</h5>
+                            <span class="text-secondary">23 April 2023</span>
+                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
+                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                            <a href="#" class="text-white"><small><i
+                                        class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                            <a href="#" class="text-white"><small><i
+                                        class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="blog-item position-relative bg-light rounded">
+                        <img src="{{ asset('site/img/blog-3.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
+                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
+                            style="top: -28px; right: 20px;">Mobile App</span>
+                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
+                            style="margin-top: -75px;">
+                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
+                                <a href="#" class="btn text-white ">Read More</a>
+                            </div>
+                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
+                                <div class="blog-icon-1">
+                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                </div>
+                                <div class="blog-icon-2">
+                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                            <img src="{{ asset('site/img/admin.jpg') }}"
+                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                            <h5 class="">By Daniel Martin</h5>
+                            <span class="text-secondary">30 jan 2023</span>
+                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
+                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div
+                            class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                            <a href="#" class="text-white"><small><i
+                                        class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                            <a href="#" class="text-white"><small><i
+                                        class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5 mb-5 team">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Our Team</h5>
+                <h1>Meet our expert Team</h1>
+            </div>
+            <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+
+                <div class="rounded team-item">
+                    <div class="team-content">
+                        <div class="team-img-icon">
+                            <div class="team-img rounded-circle">
+                                <img src="{{ asset('site/img/team-1.jpg') }}" class="img-fluid w-100 rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="team-name text-center py-3">
+                                <h4>Full Name</h4>
+                                <p class="m-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex justify-content-center pb-4">
+                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded team-item">
+                    <div class="team-content">
+                        <div class="team-img-icon">
+                            <div class="team-img rounded-circle">
+                                <img src="{{ asset('site/img/team-2.jpg') }}" class="img-fluid w-100 rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="team-name text-center py-3">
+                                <h4>Full Name</h4>
+                                <p class="m-0">Designation</p>
+                            </div>
+                            <div class="team-icon d-flex justify-content-center pb-4">
+                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded team-item">
+                    <div class="team-content">
+                        <div class="team-img-icon">
+                            <div class="team-img rounded-circle">
+                                <img src="{{ asset('site/img/team-3.jpg') }}" class="img-fluid w-100 rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="team-name text-center py-3">
+                                <h4>Full Name</h4>
+                                <p class="m-0">Designation</p>
+                            </div>
+                             <div class="team-icon d-flex justify-content-center pb-4">
+                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded team-item">
+                    <div class="team-content">
+                        <div class="team-img-icon">
+                            <div class="team-img rounded-circle">
+                                <img src="{{ asset('site/img/team-4.jpg') }}" class="img-fluid w-100 rounded-circle"
+                                    alt="">
+                            </div>
+                            <div class="team-name text-center py-3">
+                                <h4>Full Name</h4>
+                                <p class="m-0">Designation</p>
+                            </div>
+                             <div class="team-icon d-flex justify-content-center pb-4">
+                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    @include('front.sections.temoignages')
+
+
+    @include('front.sections.contacts')
+@endsection

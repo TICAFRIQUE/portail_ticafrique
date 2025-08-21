@@ -1,519 +1,334 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <!-- site metas -->
-      <title>Testimonial</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Sen:400,700,800&display=swap" rel="stylesheet">
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   </head>
-   <body>
-      <div class="header_section">
-         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="hosting.html">Hosting</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="testimonial.html">Testimonial</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="domain.html">Domain</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-                  <form class="d-flex my-2 my-lg-0">
-                  </form>
-               </div>
-            </nav>
-            <div class="custom_bg">
-               <div class="custom_menu">
-                  <ul>
-                     <li class="active"><a href="index.html">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="hosting.html">Hosting</a></li>
-                     <li><a href="testimonial.html">Testimonial</a></li>
-                     <li><a href="domain.html">Domain</a></li>
-                     <li><a href="services.html">Services</a></li>
-                     <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-               </div>
-               <form class="d-flex my-2 my-lg-0">
-                  <div class="search_btn">
-                     <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                     <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                  </div>
-               </form>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>HighTech - IT Solutions Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar">
+                    <div class="top-info">
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Ranking Street, New York</small>
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
+                    </div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+                    <div class="top-link">
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
             </div>
-         </div>
-         <!-- banner section start --> 
-         <div class="banner_section layout_padding">
-            <div id="my_slider" class="carousel slide" data-bs-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-img.png"></div>
-                           </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                    </a>
+                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="project.html" class="nav-item nav-link">Projects</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-img.png"></div>
-                           </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shirink-0">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                            <a href="" class="position-relative animated tada infinite">
+                                <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
                         </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <h1 class="banner_taital">Hosting <br>And Domain</h1>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="banner_img"><img src="images/banner-img.png"></div>
-                           </div>
+                        <div class="d-flex flex-column pe-4 border-end">
+                            <span class="text-white-50">Have any questions?</span>
+                            <span class="text-secondary">Call: + 0123 456 7890</span>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-bs-slide="prev">
-               <i class="fa fa-angle-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#my_slider" role="button" data-bs-slide="next">
-               <i class="fa fa-angle-right"></i>
-               </a>
-            </div>
-         </div>
-         <!-- banner section end -->
-      </div>
-      <!-- header section end -->
-      <!-- domain section start -->
-      <div class="domain_section">
-         <div class="container">
-            <div class="domain_box">
-               <div class="domain_rate">
-                  <ul>
-                     <li><a href="#"><span style="color: #8b2791;">.com</span> $11.25</a></li>
-                     <li><a href="#"><span style="color: #8b2791;">.org</span> $12.50</a></li>
-                     <li><a href="#"><span style="color: #8b2791;">.net</span> $14.50 </a></li>
-                     <li><a href="#"><span style="color: #8b2791;">.com</span> $11.50</a></li>
-                     <li><a href="#"><span style="color: #8b2791;">info</span> $9.00</a></li>
-                     <li><a href="#"><span style="color: #8b2791;">xyz</span> $0.99</a></li>
-                  </ul>
-               </div>
-               <div class="domain_main">
-                  <form class="example" action="#">
-                     <input type="text" placeholder="Search Domain.." name="Search Domain..">
-                     <button type="submit">Search Now</button>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- domain section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="about_box">
-                     <div class="icon_1"><img src="images/icon-1.png"></div>
-                     <h3 class="faster_text">Faster Loading Speed</h3>
-                     <p class="lorem_text">ike readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="about_box">
-                     <div class="icon_1"><img src="images/icon-2.png"></div>
-                     <h3 class="faster_text">Faster Loading Speed</h3>
-                     <p class="lorem_text">ike readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="about_box">
-                     <div class="icon_1"><img src="images/icon-3.png"></div>
-                     <h3 class="faster_text">Faster Loading Speed</h3>
-                     <p class="lorem_text">ike readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- about section end -->
-      <!-- hosting section start -->
-      <div class="hosting_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <h1 class="hosting_taital">GRID WEB HOSTING OVERVIEW</h1>
-                  <p class="hosting_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                  <div class="click_bt"><a href="#">Click Here</a></div>
-               </div>
-               <div class="col-md-6">
-                  <div class="hosting_img"><img src="images/hosting-img.png"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- hosting section end -->
-      <!-- pricing section start -->
-      <div class="pricing_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="pricing_taital">Our Pricing Plan</h1>
-                  <p class="pricing_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-               </div>
-            </div>
-            <div class="pricing_section_2">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="pricing_box">
-                        <h3 class="number_text">1</h3>
-                        <h5 class="cloud_text">Cloud Hosting</h5>
-                        <h1 class="dolor_text">$19</h1>
-                        <h3 class="monthly_text">MONTHLY</h3>
-                        <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                        <div class="signup_bt"><a href="#">Sign Up</a></div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="pricing_box">
-                        <h3 class="number_text">2</h3>
-                        <h5 class="cloud_text">VPS Hosting</h5>
-                        <h1 class="dolor_text">$19</h1>
-                        <h3 class="monthly_text">MONTHLY</h3>
-                        <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                        <div class="signup_bt"><a href="#">Sign Up</a></div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="pricing_box">
-                        <h3 class="number_text">3</h3>
-                        <h5 class="cloud_text">Shared Hosting</h5>
-                        <h1 class="dolor_text">$19</h1>
-                        <h3 class="monthly_text">MONTHLY</h3>
-                        <p class="band_text">5GB bandwidth Free Email Addresses 24/7 security monitoring</p>
-                        <div class="signup_bt"><a href="#">Sign Up</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- pricing section end -->
-      <!-- services section start -->
-      <div class="services_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="services_taital">Our Services</h1>
-                  <p class="services_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-               </div>
-            </div>
-            <div class="services_section_2">
-               <div id="main_slider"class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-4.png" class="image_1">
-                                    <img src="images/icon-7.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">WordPress Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-5.png" class="image_1">
-                                    <img src="images/icon-5.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Cloud Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-6.png" class="image_1">
-                                    <img src="images/icon-9.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
+                        <div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
                         </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-4.png" class="image_1">
-                                    <img src="images/icon-7.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">WordPress Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-5.png" class="image_1">
-                                    <img src="images/icon-5.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Cloud Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-6.png" class="image_1">
-                                    <img src="images/icon-9.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-4.png" class="image_1">
-                                    <img src="images/icon-7.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">WordPress Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-5.png" class="image_1">
-                                    <img src="images/icon-5.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Cloud Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="services_icon">
-                                    <img src="images/icon-6.png" class="image_1">
-                                    <img src="images/icon-9.png" class="image_2">
-                                 </div>
-                                 <h3 class="wordpress_text">Dedicated Hosting</h3>
-                                 <p class="opposed_text">opposed to using 'Content here, content here', making it look like readable</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#main_slider" role="button" data-bs-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#main_slider" role="button" data-bs-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
+                    </div>
+                </nav>
             </div>
-         </div>
-      </div>
-      <!-- services section end -->
-      <!-- testimonial section start -->
-      <div class="testimonial_section layout_padding">
-         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <h1 class="testimonial_taital">Testimonials</h1>
-                           <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                           <div class="testimonial_section_2">
-                              <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                              <div class="quick_img"><img src="images/quick-icon.png"></div>
-                           </div>
-                           <div class="client_img"><img src="images/client-img.png"></div>
-                           <h4 class="client_name">Joy Mori</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <h1 class="testimonial_taital">Testimonials</h1>
-                           <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                           <div class="testimonial_section_2">
-                              <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                              <div class="quick_img"><img src="images/quick-icon.png"></div>
-                           </div>
-                           <div class="client_img"><img src="images/client-img.png"></div>
-                           <h4 class="client_name">Joy Mori</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <h1 class="testimonial_taital">Testimonials</h1>
-                           <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                           <div class="testimonial_section_2">
-                              <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                              <div class="quick_img"><img src="images/quick-icon.png"></div>
-                           </div>
-                           <div class="client_img"><img src="images/client-img.png"></div>
-                           <h4 class="client_name">Joy Mori</h4>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        </div>
+        <!-- Navbar End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4 animated slideInDown">Testimonial</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Testimonial</li>
+                    </ol>
+                </nav>
             </div>
-         </div>
-      </div>
-      <!-- testimonial section end -->
-      <!-- newslatter section start -->
-      <div class="newslatter_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="newslatter_taital">Subscribe Newsletter</h1>
-                  <form class="example" action="#">
-                     <input type="text" class="mail" placeholder="Enter Your email" name="Enter Your email">
-                     <button type="submit">Sbscribe</button>
-                  </form>
-               </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">99</h1>
+                            <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">25</h1>
+                            <h5 class="text-white mt-1">Thousands of successful business</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">120</h1>
+                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex counter">
+                            <h1 class="me-3 text-primary counter-value">5</h1>
+                            <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- newslatter section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-4">
-                  <h3 class="footer_text">Useful links</h3>
-                  <div class="footer_menu">
-                     <ul>
-                        <li class="active"><a href="index.html"><span class="angle_icon active"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Home</a></li>
-                        <li><a href="#"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  About</a></li>
-                        <li><a href="services.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Services</a></li>
-                        <li><a href="domain.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> Domain</a></li>
-                        <li><a href="testimonial.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Testimonial</a></li>
-                        <li><a href="contact.html"><span class="angle_icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>  Contact Us</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-sm-4">
-                  <h3 class="footer_text">Address</h3>
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#">
-                           <span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a<br> reader will be distracted</a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890<br>(+71) 1234567890
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-sm-4">
-                  <div class="footer_main">
-                     <h3 class="footer_text">Find Us</h3>
-                     <p class="dummy_text">more-or-less normal distribution </p>
-                     <div class="social_icon">
-                        <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+        </div>
+        <!-- Fact End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5 my-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Our Testimonial</h5>
+                    <h1>Our Client Saying!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+                    <div class="testimonial-item border p-4">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="img/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class=" d-flex align-items-center">
+                            <div class="">
+                                <img src="img/testimonial-2.jpg" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class=" d-flex align-items-center">
+                            <div class="">
+                                <img src="img/testimonial-3.jpg" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item border p-4">
+                        <div class=" d-flex align-items-center">
+                            <div class="">
+                                <img src="img/testimonial-4.jpg" alt="">
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-secondary">Client Name</h4>
+                                <p class="m-0 pb-3">Profession</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                    <i class="fas fa-star me-1 text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-top mt-4 pt-3">
+                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a>. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
-         </div>
-      </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <!-- sidebar -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-\1</body>
+        </div>
+
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+         <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5 pb-4">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html">
+                            <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                        </a>
+                        <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                        <div class="d-flex hightech-link">
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-twitter text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Short Link</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Help Link</a>
+                        <div class="mt-4 d-flex flex-column help-link">
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                            <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3 text-secondary">Contact Us</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 Street, New York, USA</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +123 456 7890</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@exmple.con</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5 mb-4">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
 </html>
