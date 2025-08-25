@@ -116,7 +116,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color:rgb(2, 117, 163) !important;
+    color: var(--bs-secondary) !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -185,13 +185,13 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background:  #0dcaf0;
+    background: var(--bs-primary);
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
 
 .carousel-control-prev:hover {
-    background: rgb(55, 181, 230);
+    background: var(--bs-secondary);
     transition: .8s;
 }
 
@@ -201,27 +201,28 @@
     position: absolute;
     top: 50%;
     right: 0;
-    background:#0dcaf0;
+    background: var(--bs-primary);
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
 
 .carousel-control-next:hover {
-    background: rgb(2, 117, 163);
+    background: var(--bs-secondary);
     transition: .8s;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
-    background: #0dcaf0;
-    color: #2a2a2a;
+    background: var(--bs-secondary);
+    color: var(--bs-dark);
     opacity: 1;
     border: 0;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1:hover {
-    background: rgb(2, 117, 163);
-    color: #ffffff;
+
+  background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color:#1a1a1a;
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -229,16 +230,16 @@
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2 {
-    background: #0dcaf0;
-    color: #2a2a2a;
+    background: var(--bs-primary);
+    color: var(--bs-white);
     opacity: 1;
     border: 0;
     border-radius: 20px;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn2:hover {
-    background: rgb(2, 117, 163);
-    color: var(--bs-dark);
+     background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color:#1a1a1a;
     border: 0;
     opacity: 1;
     transition: 1s;
@@ -255,7 +256,7 @@
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: rgb(2, 117, 163);
+    background: var(--bs-secondary);
     opacity: 1;
 }
 
@@ -313,16 +314,7 @@
 }
 
 /*** Carousel End ***/
-/* style personnel */
 
-.container-fluid, .style-bg{
-    background: #06060640;
-}
-.style-btn{
-   background-color:rgb(2, 117, 163);
-}
-
-/* end style personnel */
 
 /*** Services Start ***/
 
@@ -371,11 +363,11 @@
 }
 
 .services-item:hover .services-content-icon i {
-    color:rgb(2, 117, 163) !important;
+    color: var(--bs-secondary) !important;
 }
 
 .services-item:hover .services-content-icon p {
-    color:var(--bs-white);
+    color: var(--bs-white);
 }
 
 /*** Services End ***/
@@ -528,7 +520,7 @@
 
 .team-item:hover .team-img img {
     transform: scale(1.05);
-    border: 10px solid rgb(2, 117, 163);
+    border: 10px solid var(--bs-secondary);
 }
 
 .team-carousel .owl-stage {
@@ -560,7 +552,7 @@
 
 .team-carousel .owl-nav .owl-prev:hover,
 .team-carousel .owl-nav .owl-next:hover {
-    background: rgb(2, 117, 163);
+    background: var(--bs-primary);
     color: var(--bs-white);
 }
 
@@ -621,8 +613,8 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: #FFFFFF !important;
-    box-shadow: 0 0 30px #DDDDDD;
+    background:#f3fdff !important;
+    box-shadow: 0 0 30px #f3fdff;
 }
 
 /*** Testimonial End ***/
@@ -643,11 +635,11 @@
 }
 
 .contact-map {
-    background: #26d48c;
+    background: #529ec4dc;
 }
 
 .contact-form {
-    background: #26d48c;
+     background: #529ec4dc;
 }
 
 /*** Contact End ***/
@@ -668,7 +660,7 @@
 }
 
 .footer .hightech-link a:hover {
-    background: rgb(2, 117, 163);
+    background: var(--bs-secondary);
     border: 0;
 }
 
