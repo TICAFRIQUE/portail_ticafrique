@@ -1,3 +1,167 @@
+/* style perso */
+.style-btn {
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color: #1f3a93; /* bleu profond harmonieux */
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(102, 166, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.style-btn:hover {
+    background: linear-gradient(90deg, #66a6ff, #89f7fe);
+    color: #0e2a7d; /* bleu plus foncé au hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 166, 255, 0.6);
+    text-decoration: none; /* désactive le soulignement */
+}
+
+#about {
+    background-color: #f8f9fa; /* fond clair, neutre pour la lisibilité */
+    color: #1c3879; /* bleu foncé pour le texte */
+}
+
+#about h5 {
+    color: #66a6ff; /* accent sur le petit titre */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1842b6; /* harmonisation avec ton bouton/textes bleus */
+    line-height: 1.3;
+}
+
+#about p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #223a5e; /* bleu-gris, moins agressif que le noir */
+}
+
+#about .style-btn {
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color: #1842b6;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(102, 166, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+#about .style-btn:hover {
+    background: linear-gradient(90deg, #66a6ff, #89f7fe);
+    color: #0e2a7d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 166, 255, 0.6);
+}
+
+#about img {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+    #about h1 {
+        font-size: 2rem;
+    }
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+
+.blog {
+    background-color: #f8f9fa; /* fond clair neutre */
+    color: #1c3879; /* texte bleu foncé */
+}
+
+.blog h5 {
+    color: #66a6ff; /* accent léger bleu */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.blog h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1842b6;
+}
+
+.blog-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(102, 166, 255, 0.3);
+}
+
+.blog-item img {
+    object-fit: cover;
+}
+
+.blog-item .bg-primary {
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color: #1842b6;
+    font-weight: 600;
+}
+
+.blog-btn .btn.style-btn {
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color: #1842b6;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.blog-btn .btn.style-btn:hover {
+    background: linear-gradient(90deg, #66a6ff, #89f7fe);
+    color: #0e2a7d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 166, 255, 0.5);
+}
+
+.blog-content h5,
+.blog-content span,
+.blog-content p {
+    color: #1c3879; /* texte uniforme et lisible */
+}
+
+.blog-coment, .blog-coments {
+    background: #1842b6;
+    border-radius: 0 0 15px 15px;
+    color: #ffffff;
+}
+
+.blog-coment a, .blog-coments a {
+    color: #ffffff;
+}
+
+.blog-coment a i, .blog-coments a i {
+    color: #d1d1d1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+    .blog h1 {
+        font-size: 2rem;
+    }
+    .blog-content p {
+        font-size: 1rem;
+    }
+}
+
+/* end style perso */
+
+
 /*** Spinner Start ***/
 
 #spinner {
