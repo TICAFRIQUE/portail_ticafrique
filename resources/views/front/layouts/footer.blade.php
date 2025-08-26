@@ -13,16 +13,19 @@
                 </p>
 
                 <div class="d-flex hightech-link">
-                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2">
+                    <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2">
                         <i class="fab fa-facebook-f" style="color:#1842b6;"></i>
                     </a>
-                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2">
+                    <a href="https://x.com/ticafrique" class="btn-light nav-fill btn btn-square rounded-circle me-2">
                         <i class="fab fa-twitter" style="color:#1842b6;"></i>
                     </a>
-                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-2">
+                    <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2">
                         <i class="fab fa-instagram" style="color:#1842b6;"></i>
                     </a>
-                    <a href="#" class="btn-light nav-fill btn btn-square rounded-circle me-0">
+                    <a href="https://www.linkedin.com/company/ticafrique/posts/?feedView=all"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-0">
                         <i class="fab fa-linkedin-in" style="color:#1842b6;"></i>
                     </a>
                 </div>

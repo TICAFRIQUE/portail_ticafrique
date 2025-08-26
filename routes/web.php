@@ -74,7 +74,8 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
 
 Route::prefix('ticafrique')->name('ticafrique.')->controller(SupportController::class)->group(function () {
     Route::get('/index', 'index')->name('index');
-    Route::get('/about','about')->name('about');
-    Route::get('/projects','projects')->name('projects');
-    Route::get('/contacts','contacts')->name('contacts');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/projects', 'projects')->name('projects');
+    Route::get('/contacts', 'contacts')->name('contacts');
+    Route::post('/avis', 'storeAvis')->name('avis');
 });

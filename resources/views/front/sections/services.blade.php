@@ -16,7 +16,7 @@
                                 <h4 class="mb-3">Design Web</h4>
                                 <p class="mb-4">Création de sites web modernes et adaptatifs pour représenter votre marque
                                     avec style et efficacité.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                                 <h4 class="mb-3">Développement Web</h4>
                                 <p class="mb-4">Développement de solutions web performantes et sécurisées adaptées à vos
                                     besoins spécifiques.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                 <h4 class="mb-3">Design UI/UX</h4>
                                 <p class="mb-4">Création d'interfaces utilisateur intuitives et agréables pour améliorer
                                     l'expérience de vos clients.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                 <h4 class="mb-3">Sécurité Web</h4>
                                 <p class="mb-4">Protection complète de vos applications et sites web contre les menaces et
                                     attaques numériques.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
                                 <h4 class="mb-3">Marketing Digital</h4>
                                 <p class="mb-4">Campagnes digitales efficaces pour développer votre présence en ligne et
                                     attirer de nouveaux clients.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                                 <h4 class="mb-3">Programmation</h4>
                                 <p class="mb-4">Développement de logiciels et applications personnalisés pour répondre aux
                                     besoins spécifiques de votre entreprise.</p>
-                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill">En savoir
+                                <a href="#" class="btn style-btn text-white px-5 py-3 rounded-pill d-none">En savoir
                                     plus</a>
                             </div>
                         </div>

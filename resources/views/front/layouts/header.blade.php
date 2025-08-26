@@ -21,14 +21,14 @@
             </div>
             <small class="text-white d-none d-xl-block">Note : Nous vous aidons à développer votre entreprise</small>
             <div class="d-flex gap-2">
-                <a href="#" class="btn btn-sm btn-light rounded-circle"><i
+                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="btn btn-sm btn-light rounded-circle"><i
                         class="fab fa-facebook-f text-primary"></i></a>
-                <a href="#" class="btn btn-sm btn-light rounded-circle"><i
+                <a href="https://x.com/ticafrique" class="btn btn-sm btn-light rounded-circle"><i
                         class="fab fa-twitter text-primary"></i></a>
-                <a href="#" class="btn btn-sm btn-light rounded-circle"><i
+                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="btn btn-sm btn-light rounded-circle"><i
                         class="fab fa-instagram text-primary"></i></a>
-                <a href="#" class="btn btn-sm btn-light rounded-circle"><i
-                        class="fab fa-linkedin-in text-primary"></i></a>
+                <a href="https://www.linkedin.com/company/ticafrique/posts/?feedView=all"
+                    class="btn btn-sm btn-light rounded-circle"><i class="fab fa-linkedin-in text-primary"></i></a>
             </div>
         </div>
     </div>
@@ -61,22 +61,20 @@
                                 data-bs-toggle="dropdown">Services</a>
                             <ul class="dropdown-menu rounded-0">
                                 <li><a href="#" class="dropdown-item">Développement Web</a></li>
-                                <li><a href="#" class="dropdown-item">Domaine & Hébergement</a></li>
-                                <li><a href="#" class="dropdown-item">Télécom</a></li>
-                                <li><a href="#" class="dropdown-item">SMS Marketing</a></li>
+                                <li><a href="https://sigma-web.ci/" class="dropdown-item">Domaine & Hébergement</a></li>
+                                <li><a href="https://sigma-telecom.ci/" class="dropdown-item">Télécom</a></li>
+                                <li><a href="https://sms-marketing.ci/" class="dropdown-item">SMS Marketing</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#about"
-                                class="nav-link {{ request()->routeIs('about') ? 'text-info' : 'text-dark' }}">À
-                                propos</a>
+                                class="nav-link {{ request()->routeIs('about') ? 'text-info' : 'text-dark' }}">Présentation</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('ticafrique.projects') }}"
-                                class="nav-link {{ request()->routeIs('projects') ? 'text-info' : 'text-dark' }}">Nos
-                                Projets</a>
+                                class="nav-link {{ request()->routeIs('projects') ? 'text-info' : 'text-dark' }}">Référence</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a href="#" class="nav-link text-dark dropdown-toggle"
                                 data-bs-toggle="dropdown">Pages</a>
                             <ul class="dropdown-menu rounded-0">
@@ -85,9 +83,9 @@
                                 <li><a href="#" class="dropdown-item">Témoignages</a></li>
                                 <li><a href="#" class="dropdown-item">Page 404</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
-                            <a href="#contact"
+                            <a href="{{ route('ticafrique.contacts') }}"
                                 class="nav-link {{ request()->routeIs('contacts') ? 'text-info' : 'text-dark' }}">Contact</a>
                         </li>
                     </ul>

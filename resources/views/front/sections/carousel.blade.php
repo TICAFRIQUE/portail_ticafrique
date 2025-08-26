@@ -17,10 +17,10 @@
                                 digital</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">Nous créons des solutions numériques sur
                                 mesure pour développer votre entreprise rapidement et efficacement.</p>
-                            <a href="#"><button type="button"
+                            <a href="#about"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">En
                                     savoir plus</button></a>
-                            <a href="#"><button type="button"
+                            <a href="#contact"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactez-nous</button></a>
                         </div>
                     </div>
@@ -34,10 +34,10 @@
                                 entreprise</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">Du développement web à l’hébergement et au
                                 marketing digital, nous vous accompagnons à chaque étape de votre projet.</p>
-                            <a href="#"><button type="button"
+                            <a href="#about"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">En
                                     savoir plus</button></a>
-                            <a href="#"><button type="button"
+                            <a href="#contact"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactez-nous</button></a>
                         </div>
                     </div>
