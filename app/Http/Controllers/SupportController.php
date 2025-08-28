@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Avis;
+use App\Models\Reference;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
@@ -11,8 +12,9 @@ class SupportController extends Controller
     // Page d'accueil
     public function index()
     {
+        $references = Reference::orderBy('created_at', 'desc')->take(6)->get(); // les 6 dernières références
         $avis = Avis::latest()->get(); // tous les avis récents
-        return view('index', compact('avis'));
+        return view('index', compact('avis', 'references'));
     }
 
     // Page "À propos"
@@ -21,10 +23,12 @@ class SupportController extends Controller
         return view('front.sections.about');
     }
 
-    // Page "Projets"
-    public function projects()
+    // Page "references"
+    public function references()
     {
-        return view('front.sections.recently_projects');
+        $references = Reference::orderBy('created_at', 'desc')->get();
+
+        return view('front.sections.references', compact('references'));
     }
 
     // Page "Contacts"

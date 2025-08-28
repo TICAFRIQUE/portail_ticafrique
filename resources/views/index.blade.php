@@ -4,6 +4,8 @@
 @section('content')
     @include('front.sections.carousel')
 
+
+
     <!-- Fact Start -->
     <div class="container-fluid style-bg py-5">
         <div class="container">
@@ -344,5 +346,83 @@
 
     @include('front.sections.temoignages')
 
+    <!-- Références Début -->
+    <div class="container-fluid references py-5 bg-light" id="references">
+        <div class="container">
+            <div class="text-center mb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Nos Références</h5>
+                <h1 class="fw-bold">Ils nous font confiance</h1>
+            </div>
 
+            <!-- Carousel auto-scroll -->
+            <div class="d-flex overflow-hidden">
+                <div class="d-flex references-track">
+                    @foreach ($references as $reference)
+                        <div class="reference-item text-center px-3">
+                            <img src="{{ asset('storage/' . $reference->icon) }}"
+                                alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid"
+                                style="max-height: 80px;">
+                            <p class="small mt-2">{{ $reference->title }}</p>
+                        </div>
+                    @endforeach
+
+                    {{-- On répète les références pour la boucle infinie --}}
+                    @foreach ($references as $reference)
+                        <div class="reference-item text-center px-3">
+                            <img src="{{ asset('storage/' . $reference->icon) }}"
+                                alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid"
+                                style="max-height: 80px;">
+                            <p class="small mt-2">{{ $reference->title }}</p>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Références Fin -->
+
+    <style>
+        .references-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .reference-item img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .reference-item img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .references-track {
+                animation: scroll 25s linear infinite;
+            }
+
+            .reference-item {
+                flex: 0 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reference-item {
+                flex: 0 0 auto;
+            }
+        }
+    </style>
 @endsection

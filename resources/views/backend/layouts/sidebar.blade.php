@@ -5,7 +5,7 @@
         {{-- <h4 class="text-white"> {{config('app.name')}} </h4> --}}
         <!-- Dark Logo-->
         {{-- @if ($setting != null)
-            
+
             <!-- Light Logo-->
             <a href="#" class="logo logo-light">
                 <span class="logo-sm">
@@ -81,6 +81,24 @@
                         </a>
                     </li>
                 @endcan
+               {{-- @can('voir-references') --}}
+                    <li class="nav-item">
+                        <a class="nav-link menu-link {{ Route::is('ticafrique.admin-references') ? 'active' : '' }} "
+                            href="{{ route('ticafrique.admin-references.index') }}">
+                            <i class=" ri-booklet-fill"></i> <span>RÉFÉRENCES</span>
+                        </a>
+                    </li>
+
+
+              {{-- @endcan --}}
+                <!-- Lien Commentaire  -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-comments me-2"></i> Commentaire
+                    </a>
+                </li>
+
+
 
 
 

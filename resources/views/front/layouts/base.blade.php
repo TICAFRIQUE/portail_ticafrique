@@ -38,21 +38,126 @@
     </main>
 
     @include('front.layouts.footer')
+    <!-- Floating Buttons WhatsApp + Back to Top -->
+    <div class="floating-buttons">
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
-            class="fa fa-arrow-up text-white"></i></a>
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('site/lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('site/lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('site/lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('site/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+            <!-- WhatsApp -->
+            <a href="" target="_blank" class="btn whatsapp-btn pulse">
+                <i class="fab fa-whatsapp fa-lg text-white"></i>
+            </a>
 
-    <!-- Template Javascript -->
-    <script src="{{ asset('site/js/main.js') }}"></script>
+            <!-- Back to Top -->
+            <a href="#" class="btn back-to-top-btn">
+                <i class="fa fa-arrow-up fa-lg text-white"></i>
+            </a>
+
+        </div>
+
+        <style>
+            /* Container for floating buttons */
+            .floating-buttons {
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                z-index: 9999;
+            }
+
+            /* Style commun boutons */
+            .floating-buttons .btn {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+                transition: all 0.3s ease;
+            }
+
+            /* WhatsApp bouton avec dégradé bleu + animation pulse */
+            .whatsapp-btn {
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                border: none;
+            }
+
+            .whatsapp-btn:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Animation pulse */
+            .pulse {
+                animation: pulse-animation 2s infinite;
+            }
+
+            @keyframes pulse-animation {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            /* Back to Top bouton avec dégradé gris → bleu */
+            .back-to-top-btn {
+                background: linear-gradient(135deg, #6c757d 0%, #17a2ff 100%);
+                border: none;
+            }
+
+            .back-to-top-btn:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Mobile responsiveness */
+            @media (max-width: 576px) {
+                .floating-buttons {
+                    right: 15px;
+                    bottom: 15px;
+                }
+
+                .floating-buttons .btn {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        </style>
+
+        <script>
+            document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
+
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ asset('site/lib/wow/wow.min.js') }}"></script>
+        <script src="{{ asset('site/lib/easing/easing.min.js') }}"></script>
+        <script src="{{ asset('site/lib/waypoints/waypoints.min.js') }}"></script>
+        <script src="{{ asset('site/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+        <!-- Template Javascript -->
+        <script src="{{ asset('site/js/main.js') }}"></script>
 </body>
 
 </html>

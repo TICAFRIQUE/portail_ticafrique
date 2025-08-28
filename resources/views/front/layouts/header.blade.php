@@ -71,8 +71,8 @@
                                 class="nav-link {{ request()->routeIs('about') ? 'text-info' : 'text-dark' }}">Présentation</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('ticafrique.projects') }}"
-                                class="nav-link {{ request()->routeIs('projects') ? 'text-info' : 'text-dark' }}">Référence</a>
+                            <a href="{{ route('ticafrique.references')}}"
+                                class="nav-link {{ request()->routeIs('references') ? 'text-info' : 'text-dark' }}">Référence</a>
                         </li>
                         {{-- <li class="nav-item dropdown">
                             <a href="#" class="nav-link text-dark dropdown-toggle"

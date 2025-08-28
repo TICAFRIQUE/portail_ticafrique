@@ -1,13 +1,15 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\backend\DashboardController;
+use App\Http\Controllers\AdminSupportController;
 use App\Http\Controllers\backend\AdminController;
+use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\ModuleController;
-use App\Http\Controllers\backend\RoleController;
 use App\Http\Controllers\backend\ParametreController;
 use App\Http\Controllers\backend\PermissionController;
+use App\Http\Controllers\backend\RoleController;
 use App\Http\Controllers\SupportController;
+use Illuminate\Support\Facades\Route;
+
 
 Route::fallback(function () {
     return view('backend.utility.auth-404-basic');
@@ -70,12 +72,22 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
         Route::post('update/{id}', 'update')->name('module.update');
         Route::get('delete/{id}', 'delete')->name('module.delete');
     });
+
+    // admin ticafrique
+    Route::prefix('ticafrique')->controller(AdminSupportController::class)->group(function (){
+        Route::get('create', 'create')->name('ticafrique.admin-references.create');
+        Route::post('store', 'storeReferences')->name('ticafrique.admin-references.store');
+        Route::get('index', 'index')->name('ticafrique.admin-references.index');
+        Route::get('edit/{id}', 'edit')->name('ticafrique.admin-references.edit');
+        Route::put('update/{id}', 'update')->name('ticafrique.admin-references.update');
+        Route::get('delete/{id}', 'delete')->name('ticafrique.admin-references.delete');
+    });
 });
 
 Route::prefix('ticafrique')->name('ticafrique.')->controller(SupportController::class)->group(function () {
     Route::get('/index', 'index')->name('index');
     Route::get('/about', 'about')->name('about');
-    Route::get('/projects', 'projects')->name('projects');
+    Route::get('/reference', 'references')->name('references');
     Route::get('/contacts', 'contacts')->name('contacts');
     Route::post('/avis', 'storeAvis')->name('avis');
 });
