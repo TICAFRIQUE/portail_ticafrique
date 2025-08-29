@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Avis;
+use App\Models\Carousel;
 use App\Models\Reference;
 use Illuminate\Http\Request;
 
@@ -12,9 +13,10 @@ class SupportController extends Controller
     // Page d'accueil
     public function index()
     {
+        $carrousels = Carousel::orderBy('created_at','Desc')->get(); // toutes les images du carrousel
         $references = Reference::orderBy('created_at', 'desc')->take(6)->get(); // les 6 dernières références
         $avis = Avis::latest()->get(); // tous les avis récents
-        return view('index', compact('avis', 'references'));
+        return view('index', compact('avis', 'references','carrousels'));
     }
 
     // Page "À propos"
@@ -40,6 +42,7 @@ class SupportController extends Controller
 
     public function storeAvis(Request $request)
     {
+
         $request->validate([
             'nom' => 'required|string|max:255',
             'profession' => 'required|string|max:255',

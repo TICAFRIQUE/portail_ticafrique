@@ -11,15 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('avis', function (Blueprint $table) {
-            $table->string('photo')->nullable()->after('message');
+        Schema::create('carousels', function (Blueprint $table) {
+            $table->id();
+            $table->string('image'); // chemin de l’image
+
+            $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::table('avis', function (Blueprint $table) {
-            $table->dropColumn('photo');
-        });
+        Schema::dropIfExists('carousels');
     }
 };

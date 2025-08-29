@@ -6,38 +6,10 @@
 
 
 
-    <!-- Fact Start -->
-    <div class="container-fluid style-bg py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">99</h1>
-                        <h5 class="text-dark mt-1">Success in getting happy customer</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">25</h1>
-                        <h5 class="text-dark mt-1">Thousands of successful business</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">120</h1>
-                        <h5 class="text-dark mt-1">Total clients who love HighTech</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                    <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">5</h1>
-                        <h5 class="text-dark mt-1">Stars reviews given by satisfied clients</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fact End -->
+
+
+
+
 
 
 
@@ -91,10 +63,49 @@
     <!-- À propos End -->
 
 
-
     @include('front.sections.services')
 
 
+    <!-- Témoignages / Points forts Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 wow fadeIn">
+                <h6 class="text-primary text-uppercase">Ce que disent nos clients</h6>
+                <h1 class="display-5">Des résultats concrets et visibles</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                    <div class="bg-white rounded shadow p-4 h-100 text-center">
+                        <i class="fas fa-smile fa-3x text-primary mb-3"></i>
+                        <h5>Clients satisfaits</h5>
+                        <p>Plus de 100 clients heureux de nos solutions digitales.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="bg-white rounded shadow p-4 h-100 text-center">
+                        <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                        <h5>Croissance rapide</h5>
+                        <p>Des projets qui ont permis à nos clients d’atteindre de nouveaux sommets.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="bg-white rounded shadow p-4 h-100 text-center">
+                        <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                        <h5>Expertise reconnue</h5>
+                        <p>Une équipe professionnelle et expérimentée dans le numérique.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="bg-white rounded shadow p-4 h-100 text-center">
+                        <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                        <h5>Engagement</h5>
+                        <p>Nous accompagnons nos clients de manière fiable et personnalisée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Témoignages / Points forts End -->
 
 
     {{-- j'ai desactivé la patie blog puisque ticafique n'a pas de blog pour le moment --}}

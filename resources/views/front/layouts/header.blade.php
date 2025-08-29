@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#about"
+                            <a href="{{ route('ticafrique.about') }}"
                                 class="nav-link {{ request()->routeIs('about') ? 'text-info' : 'text-dark' }}">Présentation</a>
                         </li>
                         <li class="nav-item">

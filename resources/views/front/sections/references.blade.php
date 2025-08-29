@@ -6,10 +6,12 @@
 <!-- References Start -->
 <div class="container-fluid py-5 bg-light" id="references">
     <div class="container pt-5">
-        <div class="text-center mb-5">
-            <h5 class="text-primary">Nos Références</h5>
-            <h1 class="fw-bold">Ils nous font confiance</h1>
-        </div>
+        @if(count($references) > 0)
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Nos Références</h5>
+                <h1>Ils nous font confiance !</h1>
+            </div>
+        @endif
 
         <!-- Logos des références -->
         <div class="row justify-content-center g-4">

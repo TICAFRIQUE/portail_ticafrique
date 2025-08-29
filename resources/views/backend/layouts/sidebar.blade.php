@@ -81,19 +81,26 @@
                         </a>
                     </li>
                 @endcan
-               {{-- @can('voir-references') --}}
-                    <li class="nav-item">
-                        <a class="nav-link menu-link {{ Route::is('ticafrique.admin-references') ? 'active' : '' }} "
-                            href="{{ route('ticafrique.admin-references.index') }}">
-                            <i class=" ri-booklet-fill"></i> <span>RÉFÉRENCES</span>
-                        </a>
-                    </li>
+                {{-- carrousel --}}
+                <li>
+                    <a class="nav-link menu-link {{ Route::is('ticafrique.admin-carrousel.index') ? 'active' : '' }} "
+                        href="{{ route('ticafrique.admin-carousel.index') }}">
+                        <i class=" ri-slideshow-3-fill"></i> <span>CARROUSEL</span>
+                    </a>
+                </li>
+                {{-- @can('voir-references') --}}
+                <li class="nav-item">
+                    <a class="nav-link menu-link {{ Route::is('ticafrique.admin-references.index') ? 'active' : '' }} "
+                        href="{{ route('ticafrique.admin-references.index') }}">
+                        <i class=" ri-booklet-fill"></i> <span>RÉFÉRENCES</span>
+                    </a>
+                </li>
 
 
-              {{-- @endcan --}}
+                {{-- @endcan --}}
                 <!-- Lien Commentaire  -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('ticafrique.admin-avis.index') }}" class="nav-link">
                         <i class="fas fa-comments me-2"></i> Commentaire
                     </a>
                 </li>

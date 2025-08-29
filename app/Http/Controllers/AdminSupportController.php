@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Avis;
+use App\Models\Carousel;
 use App\Models\Reference;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -56,39 +58,39 @@ class AdminSupportController extends Controller
     }
 
 
-  public function update(Request $request, $id)
-{
-    $reference = Reference::findOrFail($id);
+    public function update(Request $request, $id)
+    {
+        $reference = Reference::findOrFail($id);
 
-    // Validation
-    $request->validate([
-        'title' => 'required|string|max:255',
-        'icon' => 'nullable|image|mimes:jpg,jpeg,png,svg|max:2048',
-    ]);
+        // Validation
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'icon' => 'nullable|image|mimes:jpg,jpeg,png,svg|max:2048',
+        ]);
 
-    $data = ['title' => $request->title];
+        $data = ['title' => $request->title];
 
-    // Si une nouvelle icône est uploadée
-    if ($request->hasFile('icon')) {
-        // Supprime l'ancienne icône si elle existe
-        if ($reference->icon && Storage::disk('public')->exists($reference->icon)) {
-            Storage::disk('public')->delete($reference->icon);
+        // Si une nouvelle icône est uploadée
+        if ($request->hasFile('icon')) {
+            // Supprime l'ancienne icône si elle existe
+            if ($reference->icon && Storage::disk('public')->exists($reference->icon)) {
+                Storage::disk('public')->delete($reference->icon);
+            }
+
+            // Stocke la nouvelle icône
+            $data['icon'] = $request->file('icon')->store('references', 'public');
         }
 
-        // Stocke la nouvelle icône
-        $data['icon'] = $request->file('icon')->store('references', 'public');
+        $reference->update($data);
+
+        return redirect()->route('ticafrique.admin-references.index')
+            ->with('success', 'Référence mise à jour avec succès.');
     }
-
-    $reference->update($data);
-
-    return redirect()->route('ticafrique.admin-references.index')
-        ->with('success', 'Référence mise à jour avec succès.');
-}
 
     // supprimer une reference
     public function delete($id)
     {
-       
+
         $reference = Reference::findOrFail($id);
 
         // Supprimer l'icône associée si elle existe
@@ -100,5 +102,72 @@ class AdminSupportController extends Controller
 
         return redirect()->route('ticafrique.admin-references.index')
             ->with('success', 'Référence supprimée avec succès.');
+    }
+
+
+    // afficher les avis
+    public function avis()
+    {
+        $avis = \App\Models\Avis::orderBy('created_at', 'desc')->paginate(10);
+        return view('front.admin.commentaires.index', compact('avis'));
+    }
+
+    // supprimer un avis
+    public function deleteAvis($id)
+    {
+        $avis = \App\Models\Avis::findOrFail($id);
+
+        // Supprimer la photo associée si elle existe
+        if ($avis->photo && Storage::disk('public')->exists($avis->photo)) {
+            Storage::disk('public')->delete($avis->photo);
+        }
+
+        $avis->delete();
+
+        return redirect()->route('ticafrique.admin-avis.index')
+            ->with('success', 'Commentaire supprimé avec succès.');
+    }
+
+    // carousel start
+    public function carrousel()
+    {
+        $carrousels = Carousel::orderBy('created_at', 'Desc')->paginate(8);
+        return view('front.admin.carousel.index', compact('carrousels'));
+    }
+
+    // create carousel
+    public function createCarrousel()
+    {
+        return view('front.admin.carousel.create');
+    }
+
+    // store carousel
+    public function storeCarrousel(Request $request)
+    {
+        // ✅ Validation
+        $request->validate([
+
+            'image' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048', // max 2 Mo
+        ]);
+
+        // ✅ Upload image
+        $path = $request->file('image')->store('carrousel', 'public');
+
+        // ✅ Création en base
+        Carousel::create([
+
+            'image' => $path,
+        ]);
+
+        return redirect()->route('ticafrique.admin-carousel.index')->with('success', 'Image de carrousel ajoutée avec succès !');
+    }
+
+    // delete carousel
+    public function deleteCarrousel($id)
+    {
+        $carousel = Carousel::findOrFail($id);
+        $carousel->delete();
+
+        return redirect()->route('ticafrique.admin-carousel.index')->with('success', 'Image de carrousel supprimée avec succès !');
     }
 }

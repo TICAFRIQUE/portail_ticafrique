@@ -75,12 +75,23 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
 
     // admin ticafrique
     Route::prefix('ticafrique')->controller(AdminSupportController::class)->group(function (){
+        // references
         Route::get('create', 'create')->name('ticafrique.admin-references.create');
         Route::post('store', 'storeReferences')->name('ticafrique.admin-references.store');
         Route::get('index', 'index')->name('ticafrique.admin-references.index');
         Route::get('edit/{id}', 'edit')->name('ticafrique.admin-references.edit');
         Route::put('update/{id}', 'update')->name('ticafrique.admin-references.update');
         Route::get('delete/{id}', 'delete')->name('ticafrique.admin-references.delete');
+
+        // avis
+        Route::get('avis', 'avis')->name('ticafrique.admin-avis.index');
+        Route::delete('delete-avis/{id}', 'deleteAvis')->name('ticafrique.admin-avis.delete');
+
+        // carrousel
+        Route::get('carrousel', 'carrousel')->name('ticafrique.admin-carousel.index');
+        Route::get('create-carrousel', 'createCarrousel')->name('ticafrique.admin-carousel.create');
+        Route::post('store-carrousel', 'storeCarrousel')->name('ticafrique.admin-carousel.store');
+        Route::delete('delete-carrousel/{id}', 'deleteCarrousel')->name('ticafrique.admin-carousel.delete');
     });
 });
 
