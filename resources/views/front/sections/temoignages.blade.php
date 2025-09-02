@@ -1,11 +1,11 @@
 <!-- Témoignages Début -->
 
 @if (session('success'))
-    <div class="alert alert-success mt-3 text-center">{{ session('success') }}</div>
+    <div class="alert alert-success mt-3">{{ session('success') }}</div>
 @endif
 
 @if ($errors->any())
-    <div class="alert alert-danger mt-3 text-center">
+    <div class="alert alert-danger mt-3">
         <ul class="mb-0">
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -26,20 +26,23 @@
                 <div class="testimonial-item border p-4">
                     <div class="d-flex align-items-center">
                         <div>
-                            <img src="{{ $item->photo ? asset('storage/' . $item->photo) : asset('site/img/testimonial-1.jpg') }}"
-                                alt="Photo de {{ $item->nom }}" class="rounded-circle"
-                                style="width: 80px; height: 80px; object-fit: cover;">
+                            @if ($item->photo)
+                                <img src="{{ asset('storage/' . $item->photo) }}" alt="Photo de {{ $item->nom }}"
+                                    class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
+                            @else
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary text-white"
+                                    style="width: 80px; height: 80px;">
+                                    <i class="fas fa-user fa-2x"></i> {{-- Icône utilisateur (Font Awesome) --}}
+                                </div>
+                            @endif
                         </div>
                         <div class="ms-4">
                             <h4 class="text-secondary">{{ $item->nom }}</h4>
                             <p class="m-0 pb-3">{{ $item->profession }}</p>
                             <div class="d-flex pe-5">
                                 @for ($i = 1; $i <= 5; $i++)
-                                    @if ($i <= $item->note)
-                                        <i class="fas fa-star me-1 text-warning"></i>
-                                    @else
-                                        <i class="far fa-star me-1 text-warning"></i>
-                                    @endif
+                                    <i
+                                        class="fas fa-star me-1 {{ $i <= $item->note ? 'text-warning' : 'text-muted' }}"></i>
                                 @endfor
                             </div>
                         </div>

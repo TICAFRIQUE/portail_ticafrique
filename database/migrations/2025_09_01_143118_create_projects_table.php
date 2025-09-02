@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('carousels', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('image'); // chemin de l’image
-            $table->string('titre')->nullable();
-            $table->text('description')->nullable();
-            $table->string('sous_titre')->nullable();
-
+            $table->string('name');          // Nom complet
+            $table->string('profession');    // Profession
+            $table->string('phone');         // Numéro de téléphone
+            $table->text('description');     // Description du projet
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('carousels');
+        Schema::dropIfExists('projects');
     }
 };

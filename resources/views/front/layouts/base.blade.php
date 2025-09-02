@@ -18,6 +18,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('site/lib/animate/animate.min.css') }}" rel="stylesheet">
@@ -44,10 +45,16 @@
         <!-- Floating Buttons -->
         <div class="floating-buttons">
 
+            <!-- soumettre un projet-->
+            <a href="{{ route('project.create') }}" target="_blank" class="btn submid-btn pulse text-white">
+                <i class="bi bi-pencil-square"></i>
+            </a>
+
             <!-- WhatsApp -->
-            <a href="" target="_blank" class="btn whatsapp-btn pulse">
+            <a href="https://wa.me/2250700000000" target="_blank" class="btn whatsapp-btn pulse">
                 <i class="fab fa-whatsapp fa-lg text-white"></i>
             </a>
+
 
             <!-- Back to Top -->
             <a href="#" class="btn back-to-top-btn">
@@ -83,6 +90,11 @@
             /* WhatsApp bouton avec dégradé bleu + animation pulse */
             .whatsapp-btn {
                 background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                border: none;
+            }
+
+            .submid-btn {
+                background: linear-gradient(135deg, #1af0ff 0%, #3d87fd 100%);
                 border: none;
             }
 

@@ -3,16 +3,7 @@
 
 @section('content')
     @include('front.sections.carousel')
-
-
-
-
-
-
-
-
-
-
+    @include('front.sections.services')
     <!-- À propos Start -->
     <div class="container-fluid py-5 my-5" id="about">
         <div class="container pt-5">
@@ -20,11 +11,11 @@
                 <!-- Images -->
                 <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                     <div class="h-100 position-relative">
-                        <img src="{{ asset('site/img/about-1.jpg') }}" class="img-fluid w-75 rounded"
+                        <img src="{{ asset('site/img/pexels-edmond-dantes-8555769.jpg') }}" class="img-fluid w-75 rounded"
                             alt="TicAfrique - Solutions TIC" style="margin-bottom: 25%;">
                         <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                            <img src="{{ asset('site/img/about-2.jpg') }}" class="img-fluid w-100 rounded"
-                                alt="Expertise numérique">
+                            <img src="{{ asset('site/img/startae-team-7tXA8xwe4W4-unsplash.jpg') }}"
+                                class="img-fluid w-100 rounded" alt="Expertise numérique">
                         </div>
                     </div>
                 </div>
@@ -61,10 +52,6 @@
         </div>
     </div>
     <!-- À propos End -->
-
-
-    @include('front.sections.services')
-
 
     <!-- Témoignages / Points forts Start -->
     <div class="container-fluid py-5 bg-light">
@@ -360,53 +347,52 @@
     <!-- Références Début -->
     <div class="container-fluid references py-5 bg-light" id="references">
         <div class="container">
-            <div class="text-center mb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Nos Références</h5>
-                <h1 class="fw-bold">Ils nous font confiance</h1>
-            </div>
+
+            <!-- Titre centré -->
+            @if (count($references) > 0)
+                <div class="text-center references-title mb-5 wow fadeIn" data-wow-delay=".3s">
+                    <h5 class="text-primary">Nos Références</h5>
+                    <h1 class="fw-bold">Ils nous font confiance</h1>
+                </div>
+            @endif
 
             <!-- Carousel auto-scroll -->
             <div class="d-flex overflow-hidden">
                 <div class="d-flex references-track">
                     @foreach ($references as $reference)
-                        <div class="reference-item text-center px-3">
-                            <img src="{{ asset('storage/' . $reference->icon) }}"
-                                alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid"
-                                style="max-height: 80px;">
-                            <p class="small mt-2">{{ $reference->title }}</p>
+                        <div class="reference-item text-center">
+                            <div class="reference-card p-3 rounded bg-white shadow-sm">
+                                <img src="{{ asset('storage/' . $reference->icon) }}"
+                                    alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid reference-icon">
+                                <p class="small mt-2 mb-0">{{ $reference->title }}</p>
+                            </div>
                         </div>
                     @endforeach
 
-                    {{-- On répète les références pour la boucle infinie --}}
+                    {{-- Boucle infinie --}}
                     @foreach ($references as $reference)
-                        <div class="reference-item text-center px-3">
-                            <img src="{{ asset('storage/' . $reference->icon) }}"
-                                alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid"
-                                style="max-height: 80px;">
-                            <p class="small mt-2">{{ $reference->title }}</p>
+                        <div class="reference-item text-center">
+                            <div class="reference-card p-3 rounded bg-white shadow-sm">
+                                <img src="{{ asset('storage/' . $reference->icon) }}"
+                                    alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid reference-icon">
+                                <p class="small mt-2 mb-0">{{ $reference->title }}</p>
+                            </div>
                         </div>
                     @endforeach
                 </div>
             </div>
+
         </div>
     </div>
-
     <!-- Références Fin -->
 
     <style>
+        /* Carousel scrolling */
         .references-track {
             display: flex;
             animation: scroll 20s linear infinite;
-            gap: 1rem;
+            gap: 1.5rem;
             align-items: center;
-        }
-
-        .reference-item img {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .reference-item img:hover {
-            transform: scale(1.05);
         }
 
         @keyframes scroll {
@@ -419,20 +405,65 @@
             }
         }
 
+        /* Uniformisation des logos et des cartes */
+        .reference-card {
+            width: 150px;
+            /* même largeur pour toutes les cartes */
+            height: 150px;
+            /* même hauteur */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #ffffff;
+        }
+
+        .reference-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .reference-icon {
+            max-height: 80px;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
+
+        .reference-card:hover .reference-icon {
+            transform: scale(1.1);
+        }
+
+        /* Titre centré avec largeur max */
+        .references-title {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .references-track {
-                animation: scroll 25s linear infinite;
+                animation-duration: 25s;
             }
 
-            .reference-item {
-                flex: 0 0 auto;
+            .reference-card {
+                width: 120px;
+                height: 120px;
+            }
+
+            .reference-icon {
+                max-height: 60px;
             }
         }
 
         @media (max-width: 480px) {
-            .reference-item {
-                flex: 0 0 auto;
+            .reference-card {
+                width: 100px;
+                height: 100px;
+            }
+
+            .reference-icon {
+                max-height: 50px;
             }
         }
     </style>

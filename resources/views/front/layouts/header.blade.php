@@ -21,15 +21,64 @@
             </div>
             <small class="text-white d-none d-xl-block">Note : Nous vous aidons à développer votre entreprise</small>
             <div class="d-flex gap-2">
-                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="btn btn-sm btn-light rounded-circle"><i
-                        class="fab fa-facebook-f text-primary"></i></a>
-                <a href="https://x.com/ticafrique" class="btn btn-sm btn-light rounded-circle"><i
-                        class="fab fa-twitter text-primary"></i></a>
-                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="btn btn-sm btn-light rounded-circle"><i
-                        class="fab fa-instagram text-primary"></i></a>
-                <a href="https://www.linkedin.com/company/ticafrique/posts/?feedView=all"
-                    class="btn btn-sm btn-light rounded-circle"><i class="fab fa-linkedin-in text-primary"></i></a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/ticafrique" target="_blank"
+                    class="btn btn-sm btn-light rounded-circle social-btn pulse">
+                    <i class="fab fa-facebook-f text-primary"></i>
+                </a>
+
+                <!-- X (anciennement Twitter) -->
+                <a href="https://x.com/ticafrique" target="_blank"
+                    class="btn btn-sm btn-light rounded-circle social-btn pulse">
+                   <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ticafrique" target="_blank"
+                    class="btn btn-sm btn-light rounded-circle social-btn pulse">
+                    <i class="fab fa-instagram text-danger"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/company/ticafrique" target="_blank"
+                    class="btn btn-sm btn-light rounded-circle social-btn pulse">
+                    <i class="fab fa-linkedin-in text-primary"></i>
+                </a>
             </div>
+
+            <style>
+                /* Animation pulse pour attirer l'attention */
+                @keyframes pulse-animation {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.15);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+
+                .pulse {
+                    animation: pulse-animation 2s infinite;
+                }
+
+                /* Effet hover */
+                .social-btn {
+                    transition: all 0.3s ease;
+                    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .social-btn:hover {
+                    transform: translateY(-3px) scale(1.2);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                }
+            </style>
+
+
         </div>
     </div>
     <!-- Topbar End -->
@@ -40,8 +89,10 @@
             <nav class="navbar navbar-expand-lg navbar-light py-2">
                 <!-- Logo -->
                 <a href="{{ route('ticafrique.index') }}" class="navbar-brand">
-                    <h1 class="text-dark fw-bold m-0">Tic<span class="text-info">Afrique</span></h1>
+                    <img src="{{ asset('site/img/logo.jpg') }}" alt="Logo TicAfrique"
+                        style="width: 100%; height:55px; object-fit: cover; ">
                 </a>
+
 
                 <!-- Toggle mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -71,7 +122,7 @@
                                 class="nav-link {{ request()->routeIs('about') ? 'text-info' : 'text-dark' }}">Présentation</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('ticafrique.references')}}"
+                            <a href="{{ route('ticafrique.references') }}"
                                 class="nav-link {{ request()->routeIs('references') ? 'text-info' : 'text-dark' }}">Référence</a>
                         </li>
                         {{-- <li class="nav-item dropdown">

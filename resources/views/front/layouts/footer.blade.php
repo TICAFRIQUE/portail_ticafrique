@@ -14,22 +14,30 @@
                 </p>
 
                 <div class="d-flex justify-content-center justify-content-md-start mt-3 gap-2">
+                    <!-- Facebook -->
                     <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr"
                         class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f text-primary"></i>
                     </a>
+
+                    <!-- X (anciennement Twitter) -->
                     <a href="https://x.com/ticafrique" class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-twitter"></i>
+                        <i class="bi bi-twitter-x"></i>
                     </a>
+
+                    <!-- Instagram -->
                     <a href="https://www.instagram.com/ticafrique"
                         class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-instagram"></i>
+                        <i class="bi bi-instagram text-danger"></i>
                     </a>
+
+                    <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/company/ticafrique/posts/?feedView=all"
                         class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in text-primary"></i>
                     </a>
                 </div>
+
             </div>
 
             <!-- Liens rapides -->
@@ -53,7 +61,7 @@
                 <h5 class="text-info mb-3">Aide</h5>
                 <div class="d-flex flex-column">
                     <a href="#" class="mb-2 text-white footer-link"><i
-                            class="fas fa-angle-right me-2"></i>Conditions d'utilisation</a>
+                            class="fas fa-angle-right me-2 d-none"></i>Conditions d'utilisation</a>
                     <a href="#" class="mb-2 text-white footer-link"><i
                             class="fas fa-angle-right me-2"></i>Politique de confidentialité</a>
                     <a href="#" class="mb-2 text-white footer-link"><i

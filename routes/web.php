@@ -92,13 +92,21 @@ Route::middleware(['admin'])->prefix('admin')->group(function () {
         Route::get('create-carrousel', 'createCarrousel')->name('ticafrique.admin-carousel.create');
         Route::post('store-carrousel', 'storeCarrousel')->name('ticafrique.admin-carousel.store');
         Route::delete('delete-carrousel/{id}', 'deleteCarrousel')->name('ticafrique.admin-carousel.delete');
+
+        // projets
+        Route::get('projects', 'projects')->name('ticafrique.admin-projects.index');
+        Route::delete('delete-project/{id}', 'deleteProject')->name('ticafrique.admin-projects.delete');
     });
 });
 
-Route::prefix('ticafrique')->name('ticafrique.')->controller(SupportController::class)->group(function () {
-    Route::get('/index', 'index')->name('index');
+Route::name('ticafrique.')->controller(SupportController::class)->group(function () {
+    Route::get('/', 'index')->name('index');
     Route::get('/about', 'about')->name('about');
     Route::get('/reference', 'references')->name('references');
     Route::get('/contacts', 'contacts')->name('contacts');
     Route::post('/avis', 'storeAvis')->name('avis');
 });
+
+// Route pour la soumission de projet
+Route::get('/create-project', [App\Http\Controllers\ProjectController::class, 'create'])->name('project.create');
+Route::post('/submit-project', [App\Http\Controllers\ProjectController::class, 'store'])->name('project.store');

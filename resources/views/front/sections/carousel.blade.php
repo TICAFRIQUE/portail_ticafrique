@@ -34,10 +34,10 @@
                                 votre entreprise</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">Du développement web à l’hébergement et
                                 au marketing digital...</p>
-                            <a href="#about"><button type="button"
+                            <a href="{{ route('ticafrique.about') }}"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">En
                                     savoir plus</button></a>
-                            <a href="#contact"><button type="button"
+                            <a href="{{ route('ticafrique.contacts') }}"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactez-nous</button></a>
                         </div>
                     </div>
@@ -62,6 +62,22 @@
                     <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                         <img src="{{ asset('storage/' . $item->image) }}" class="d-block w-100" alt="Image du carrousel"
                             style="max-height:600px; object-fit:cover;">
+
+                        <!-- ✅ La caption doit être DANS le carousel-item -->
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h6 class="text-info h4 animated fadeInUp">{{ $item->titre }}</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">{{ $item->sous_titre }}</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">{{ $item->description }}</p>
+                                <a href="{{ route('ticafrique.about') }}"><button type="button"
+                                        class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">En
+                                        savoir plus</button></a>
+                                <a href="{{ route('ticafrique.contacts') }}"><button type="button"
+                                        class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contactez-nous</button></a>
+                                <a href="{{ route('project.create') }}"><button type="button"
+                                        class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Soumettre un projet</button></a>
+                            </div>
+                        </div>
                     </div>
                 @endforeach
             </div>

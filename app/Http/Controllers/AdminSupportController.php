@@ -148,6 +148,9 @@ class AdminSupportController extends Controller
         $request->validate([
 
             'image' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048', // max 2 Mo
+            'titre' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
+            'sous_titre' => 'nullable|string|max:255',
         ]);
 
         // ✅ Upload image
@@ -157,6 +160,9 @@ class AdminSupportController extends Controller
         Carousel::create([
 
             'image' => $path,
+            'titre' => $request->titre,
+            'description' => $request->description,
+            'sous_titre' => $request->sous_titre,
         ]);
 
         return redirect()->route('ticafrique.admin-carousel.index')->with('success', 'Image de carrousel ajoutée avec succès !');
@@ -170,4 +176,15 @@ class AdminSupportController extends Controller
 
         return redirect()->route('ticafrique.admin-carousel.index')->with('success', 'Image de carrousel supprimée avec succès !');
     }
+
+
+    // afficher les projets soumis
+    public function projects()
+    {
+        $projects = \App\Models\Project::orderBy('created_at', 'desc')->paginate(10);
+        return view('front.admin.projects.index', compact('projects'));
+    }   
+
+
+
 }

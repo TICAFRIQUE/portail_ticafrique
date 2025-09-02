@@ -81,6 +81,13 @@
                         </a>
                     </li>
                 @endcan
+                {{-- projets soumits --}}
+                <li class="nav-item">
+                    <a class="nav-link menu-link {{ Route::is('ticafrique.admin-projects.index') ? 'active' : '' }} "
+                        href="{{ route('ticafrique.admin-projects.index') }}">
+                        <i class=" ri-folder-3-fill"></i> <span>PROJETS SOUMIS</span>
+                    </a>
+                </li>
                 {{-- carrousel --}}
                 <li>
                     <a class="nav-link menu-link {{ Route::is('ticafrique.admin-carrousel.index') ? 'active' : '' }} "
