@@ -7,8 +7,12 @@ use App\Http\Controllers\backend\ModuleController;
 use App\Http\Controllers\backend\ParametreController;
 use App\Http\Controllers\backend\PermissionController;
 use App\Http\Controllers\backend\RoleController;
+use App\Http\Controllers\DigitalCommunicationController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SupportController;
 use Illuminate\Support\Facades\Route;
+
+
 
 
 Route::fallback(function () {
@@ -108,5 +112,9 @@ Route::name('ticafrique.')->controller(SupportController::class)->group(function
 });
 
 // Route pour la soumission de projet
-Route::get('/create-project', [App\Http\Controllers\ProjectController::class, 'create'])->name('project.create');
-Route::post('/submit-project', [App\Http\Controllers\ProjectController::class, 'store'])->name('project.store');
+Route::get('/create-project', [ProjectController::class, 'create'])->name('project.create');
+Route::post('/submit-project', [ProjectController::class, 'store'])->name('project.store');
+
+// Route pour les services digitaux et communication
+Route::get('/index', [DigitalCommunicationController::class, 'index_digital'])->name('digital.index');
+
