@@ -126,7 +126,7 @@
                                 <a href="#" class="nav-link text-dark dropdown-toggle"
                                     data-bs-toggle="dropdown">Services</a>
                                 <ul class="dropdown-menu rounded-0">
-                                    <li><a href="#" class="dropdown-item">Développement Web</a></li>
+                                    <li><a href="https://communication-web.ci/home" class="dropdown-item">Digitalisation & Communication digitale</a></li>
                                     <li><a href="https://sigma-web.ci/" class="dropdown-item">Domaine & Hébergement</a>
                                     </li>
                                     <li><a href="https://sigma-telecom.ci/" class="dropdown-item">Télécom</a></li>

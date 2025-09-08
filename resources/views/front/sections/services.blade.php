@@ -19,13 +19,13 @@
                         ERP, logiciels métiers, sites web, réseaux sociaux, applications mobiles et campagnes emails pour moderniser votre activité.
                     </p>
 
-                    <a href="{{ route('digital.index') }}" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
-                    </a>
-
-                    {{-- <a href="https://communication-web.ci/home" class="btn btn-primary rounded-pill mt-3">
+                    {{-- <a href="{{ route('digital.index') }}" class="btn btn-primary rounded-pill mt-3">
                         <i class="fa fa-pen-to-square me-2"></i> En savoir plus
                     </a> --}}
+
+                    <a href="https://communication-web.ci/home" class="btn btn-primary rounded-pill mt-3">
+                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
+                    </a>
                 </div>
             </div>
 
