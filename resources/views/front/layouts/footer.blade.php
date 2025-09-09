@@ -109,7 +109,7 @@
 
     <!-- Floating WhatsApp & Back to Top -->
     <div class="floating-buttons">
-        <a href="" target="_blank" class="btn whatsapp-btn pulse">
+        <a href="https://wa.me/+2250778599242" target="_blank" class="btn whatsapp-btn pulse">
             <i class="fab fa-whatsapp fa-lg text-white"></i>
         </a>
         <a href="#" class="btn back-to-top-btn rotate">

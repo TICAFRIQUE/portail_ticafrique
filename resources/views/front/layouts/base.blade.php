@@ -47,11 +47,11 @@
 
             <!-- soumettre un projet-->
             <a href="{{ route('project.create') }}" target="_blank" class="btn submid-btn pulse text-white">
-                <i class="bi bi-pencil-square"></i>
+              <i class="bi bi-file-earmark-text-fill"></i>
             </a>
 
             <!-- WhatsApp -->
-            <a href="https://wa.me/2250700000000" target="_blank" class="btn whatsapp-btn pulse">
+            <a href="https://wa.me/+2250778599242" target="_blank" class="btn whatsapp-btn pulse">
                 <i class="fab fa-whatsapp fa-lg text-white"></i>
             </a>
 
