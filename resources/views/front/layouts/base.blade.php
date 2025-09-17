@@ -2,11 +2,14 @@
 <html lang="fr">
 
 <head>
+    <!-- Basic Page Needs
+ ================================================== -->
     <meta charset="utf-8">
-    <title>TicAfi - IT Solutions Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portail TICAFRIQUE</title>
+    <meta name="description"
+        content="TICAFRIQUE est le département de SIP en charge de développer des solutions TIC pour les entreprises et organisations. TICAFRIQUE est spécialisée dans l’optimisation de la performance des entreprises et organisations à travers les télécoms, la communication web et les solutions numériques. Pour garantir une meilleure qualité de service avec une réduction drastique des coûts de communication téléphoniques, TICAFRIQUE offre aux entreprises son expertise pour une optimisation du système téléphonique à travers plusieurs offres sur mesure. ">
+    <meta name="author" content="http://ticafrique.ci">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +50,7 @@
 
             <!-- soumettre un projet-->
             <a href="{{ route('project.create') }}" target="_blank" class="btn submid-btn pulse text-white">
-              <i class="bi bi-file-earmark-text-fill"></i>
+                <i class="bi bi-file-earmark-text-fill"></i>
             </a>
 
             <!-- WhatsApp -->
