@@ -22,7 +22,6 @@
                     {{-- <a href="{{ route('digital.index') }}" class="btn btn-primary rounded-pill mt-3">
                         <i class="fa fa-pen-to-square me-2"></i> En savoir plus
                     </a> --}}
-
                     <a href="https://communication-web.ci/home" class="btn btn-primary rounded-pill mt-3">
                         <i class="fa fa-pen-to-square me-2"></i> En savoir plus
                     </a>

@@ -3,13 +3,14 @@
 
 <head>
     <!-- Basic Page Needs
- ================================================== -->
+    ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portail TICAFRIQUE</title>
     <meta name="description"
-        content="TICAFRIQUE est le département de SIP en charge de développer des solutions TIC pour les entreprises et organisations. TICAFRIQUE est spécialisée dans l’optimisation de la performance des entreprises et organisations à travers les télécoms, la communication web et les solutions numériques. Pour garantir une meilleure qualité de service avec une réduction drastique des coûts de communication téléphoniques, TICAFRIQUE offre aux entreprises son expertise pour une optimisation du système téléphonique à travers plusieurs offres sur mesure. ">
+        content="TICAFRIQUE est le département de SIP en charge de développer des solutions TIC pour les entreprises et organisations. TICAFRIQUE est spécialisée dans l’optimisation de la performance des entreprises et organisations à travers les télécoms, la communication web et les solutions numériques. Pour garantir une meilleure qualité de service avec une réduction drastique des coûts de communication téléphoniques, TICAFRIQUE offre aux entreprises son expertise pour une optimisation du système téléphonique à travers plusieurs offres sur mesure.">
     <meta name="author" content="http://ticafrique.ci">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,8 @@
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Garde une seule version de Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('site/lib/animate/animate.min.css') }}" rel="stylesheet">
@@ -33,6 +34,7 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('site/css/style.css') }}" rel="stylesheet">
 </head>
+
 
 <body>
     @include('front.layouts.header')
