@@ -2,39 +2,116 @@
 <html lang="fr">
 
 <head>
-    <!-- Basic Page Needs
-    ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portail TICAFRIQUE</title>
-    <meta name="description"
-        content="TICAFRIQUE est le département de SIP en charge de développer des solutions TIC pour les entreprises et organisations. TICAFRIQUE est spécialisée dans l’optimisation de la performance des entreprises et organisations à travers les télécoms, la communication web et les solutions numériques. Pour garantir une meilleure qualité de service avec une réduction drastique des coûts de communication téléphoniques, TICAFRIQUE offre aux entreprises son expertise pour une optimisation du système téléphonique à travers plusieurs offres sur mesure.">
+    <title>Portail TIC@FRIQUE</title>
+    <meta name="description" content="TICAFRIQUE - Expert en solutions numériques, télécoms et communication web en Côte d'Ivoire.">
     <meta name="author" content="http://ticafrique.ci">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <!-- Garde une seule version de Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="{{ asset('site/lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('site/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('site/css/bootstrap.min.css') }}" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="{{ asset('site/css/style.css') }}" rel="stylesheet">
-</head>
 
+    <style>
+        :root {
+            --primary-blue: #003d7a;
+            --accent-cyan: #0dcaf0;
+        }
+
+        /* --- Boutons Flottants --- */
+        .floating-action-group {
+            position: fixed;
+            right: 20px;
+            bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 1050;
+        }
+
+        .btn-float {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            color: white !important;
+            text-decoration: none;
+        }
+
+        .btn-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Bouton Projet (Cyan) */
+        .submit-btn {
+            background: linear-gradient(135deg, var(--accent-cyan), #204069ff);
+        }
+
+        /* Bouton WhatsApp (Vert ou Cyan selon votre préférence, ici Cyan pour l'uniformité) */
+        .whatsapp-float {
+            background: #25D366;
+            /* Vert officiel pour WhatsApp */
+        }
+
+        /* Bouton Back to Top (Bleu Profond) */
+        .back-to-top {
+            background: var(--primary-blue);
+            display: none;
+            /* Apparaît au scroll via JS */
+        }
+
+        /* Animation Pulse */
+        .pulse-effect {
+            animation: pulse-ring 2s infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(34, 102, 249, 0.6);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 12px rgba(13, 202, 240, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(13, 202, 240, 0);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .btn-float {
+                width: 45px;
+                height: 45px;
+            }
+
+            .floating-action-group {
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
 
 <body>
     @include('front.layouts.header')
@@ -44,137 +121,52 @@
     </main>
 
     @include('front.layouts.footer')
-    <!-- Floating Buttons WhatsApp + Back to Top -->
-    <div class="floating-buttons">
 
-        <!-- Floating Buttons -->
-        <div class="floating-buttons">
+    <div class="floating-action-group">
+        <a href="{{ route('project.create') }}" class="btn-float submit-btn pulse-effect" title="Soumettre un projet">
+            <i class="bi bi-file-earmark-plus-fill fs-4"></i>
+        </a>
 
-            <!-- soumettre un projet-->
-            <a href="{{ route('project.create') }}" target="_blank" class="btn submid-btn pulse text-white">
-                <i class="bi bi-file-earmark-text-fill"></i>
-            </a>
+        <a href="https://wa.me/+2250778599242" target="_blank" class="btn-float whatsapp-float" title="Nous contacter sur WhatsApp">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
 
-            <!-- WhatsApp -->
-            <a href="https://wa.me/+2250778599242" target="_blank" class="btn whatsapp-btn pulse">
-                <i class="fab fa-whatsapp fa-lg text-white"></i>
-            </a>
+        <a href="#" id="scrollTopBtn" class="btn-float back-to-top" title="Retour en haut">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('site/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('site/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('site/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('site/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-            <!-- Back to Top -->
-            <a href="#" class="btn back-to-top-btn">
-                <i class="fa fa-arrow-up fa-lg text-white"></i>
-            </a>
+    <script>
+        // Initialisation de WOW.js
+        new WOW().init();
 
-        </div>
-
-        <style>
-            /* Container for floating buttons */
-            .floating-buttons {
-                position: fixed;
-                right: 20px;
-                bottom: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                z-index: 9999;
+        // Gestion du bouton de retour en haut
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.style.display = 'flex';
+            } else {
+                scrollTopBtn.style.display = 'none';
             }
+        });
 
-            /* Style commun boutons */
-            .floating-buttons .btn {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-                transition: all 0.3s ease;
-            }
-
-            /* WhatsApp bouton avec dégradé bleu + animation pulse */
-            .whatsapp-btn {
-                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-                border: none;
-            }
-
-            .submid-btn {
-                background: linear-gradient(135deg, #1af0ff 0%, #3d87fd 100%);
-                border: none;
-            }
-
-            .whatsapp-btn:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            }
-
-            /* Animation pulse */
-            .pulse {
-                animation: pulse-animation 2s infinite;
-            }
-
-            @keyframes pulse-animation {
-                0% {
-                    transform: scale(1);
-                }
-
-                50% {
-                    transform: scale(1.1);
-                }
-
-                100% {
-                    transform: scale(1);
-                }
-            }
-
-            /* Back to Top bouton avec dégradé gris → bleu */
-            .back-to-top-btn {
-                background: linear-gradient(135deg, #6c757d 0%, #17a2ff 100%);
-                border: none;
-            }
-
-            .back-to-top-btn:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            }
-
-            /* Mobile responsiveness */
-            @media (max-width: 576px) {
-                .floating-buttons {
-                    right: 15px;
-                    bottom: 15px;
-                }
-
-                .floating-buttons .btn {
-                    width: 45px;
-                    height: 45px;
-                }
-            }
-        </style>
-
-        <script>
-            document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
+        scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
-        </script>
+        });
+    </script>
 
-
-
-
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ asset('site/lib/wow/wow.min.js') }}"></script>
-        <script src="{{ asset('site/lib/easing/easing.min.js') }}"></script>
-        <script src="{{ asset('site/lib/waypoints/waypoints.min.js') }}"></script>
-        <script src="{{ asset('site/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-
-        <!-- Template Javascript -->
-        <script src="{{ asset('site/js/main.js') }}"></script>
+    <script src="{{ asset('site/js/main.js') }}"></script>
 </body>
 
 </html>

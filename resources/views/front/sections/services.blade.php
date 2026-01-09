@@ -1,144 +1,153 @@
 <!-- Services Start -->
-<div class="container-fluid services py-5 mb-5" id="services">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 700px;">
-            <h5 class="text-primary">Nos Services</h5>
-            <h1 class="fw-bold">Des solutions modernes pour booster votre entreprise</h1>
+<section class="services-section py-5" id="services" style="background-color: #ffffff !important;">
+    <div class="container py-4">
+        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 700px;">
+            <h5 class="fw-bold text-uppercase" style="color: #003d7a !important; letter-spacing: 2px !important;">Nos Services</h5>
+            <h2 class="display-5 fw-bold" style="color: #0b1c2d !important;">Des solutions modernes pour booster votre entreprise</h2>
         </div>
-        <div class="row g-4 services-inner">
 
-            <!-- Service 1 : Digitalisation & Communication digitale -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
-                <div class="services-item bg-white shadow rounded-3 h-100 text-center p-4">
-                    <div class="services-content-icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle shadow"
-                        style="width:80px; height:80px;">
-                        <i class="fas fa-laptop-code fa-2x text-primary"></i>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h4 class="mb-3">Digitalisation & Communication digitale</h4>
-                    <p class="text-muted text-truncate-3">
-                        ERP, logiciels métiers, sites web, réseaux sociaux, applications mobiles et campagnes emails pour moderniser votre activité.
-                    </p>
-
-                    {{-- <a href="{{ route('digital.index') }}" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
-                    </a> --}}
-                    <a href="https://communication-web.ci/home" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
+                    <h4>Digitalisation & Communication</h4>
+                    <p>ERP, logiciels métiers, sites web et applications mobiles pour moderniser votre activité.</p>
+                    <a href="https://communication-web.ci/home" class="btn-service">
+                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Service 2 : Domaine & Hébergement -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
-                <div class="services-item bg-white shadow rounded-3 h-100 text-center p-4">
-                    <div class="services-content-icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle shadow"
-                        style="width:80px; height:80px;">
-                        <i class="fas fa-globe fa-2x text-primary"></i>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h4 class="mb-3">Domaine & Hébergement</h4>
-                    <p class="text-muted text-truncate-3">
-                        Enregistrement de domaines et hébergement web sécurisé pour tous vos projets digitaux.
-                    </p>
-                    <a href="https://sigma-web.ci/" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
+                    <h4>Domaine & Hébergement</h4>
+                    <p>Enregistrement de domaines et hébergement web sécurisé pour tous vos projets digitaux.</p>
+                    <a href="https://sigma-web.ci/" class="btn-service">
+                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Service 3 : Télécom -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
-                <div class="services-item bg-white shadow rounded-3 h-100 text-center p-4">
-                    <div class="services-content-icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle shadow"
-                        style="width:80px; height:80px;">
-                        <i class="fas fa-satellite-dish fa-2x text-primary"></i>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-satellite-dish"></i>
                     </div>
-                    <h4 class="mb-3">Télécom</h4>
-                    <p class="text-muted text-truncate-3">
-                        Des solutions télécoms fiables pour une connectivité optimale et sans interruption.
-                    </p>
-                    <a href="https://sigma-telecom.ci/" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
+                    <h4>Solutions Télécom</h4>
+                    <p>Des solutions télécoms fiables pour une connectivité optimale et sans interruption.</p>
+                    <a href="https://sigma-telecom.ci/" class="btn-service">
+                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Service 4 : SMS Marketing -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.8s">
-                <div class="services-item bg-white shadow rounded-3 h-100 text-center p-4">
-                    <div class="services-content-icon mb-3 d-inline-flex align-items-center justify-content-center rounded-circle shadow"
-                        style="width:80px; height:80px;">
-                        <i class="fas fa-sms fa-2x text-primary"></i>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-sms"></i>
                     </div>
-                    <h4 class="mb-3">SMS Marketing</h4>
-                    <p class="text-muted text-truncate-3">
-                        Touchez vos clients directement grâce à des campagnes SMS rapides et efficaces.
-                    </p>
-                    <a href="https://sms-marketing.ci/" class="btn btn-primary rounded-pill mt-3">
-                        <i class="fa fa-pen-to-square me-2"></i> En savoir plus
+                    <h4>SMS Marketing</h4>
+                    <p>Touchez vos clients directement grâce à des campagnes SMS rapides et efficaces.</p>
+                    <a href="https://sms-marketing.ci/" class="btn-service">
+                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
-</div>
-
+</section>
 <!-- Styles Hover -->
 <style>
-    .services-item {
-        transition: all 0.3s ease-in-out;
-        position: relative;
-        overflow: hidden;
+    /* --- Carte de Service --- */
+    .service-card {
+        background: #ffffff !important;
+        border: 1px solid #e9ecef !important;
+        padding: 40px 25px !important;
+        border-radius: 12px !important;
+        text-align: center !important;
+        height: 100% !important;
+        transition: all 0.3s ease-in-out !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
-    .services-content-icon {
-        background: #f8f9fa;
-        transition: all 0.4s ease-in-out;
+    .service-card:hover {
+        transform: translateY(-8px) !important;
+        box-shadow: 0 15px 30px rgba(0, 61, 122, 0.12) !important;
+        border-color: #003d7a !important;
     }
 
-    .services-item h4,
-    .services-item p,
-    .services-item i {
-        transition: all 0.3s ease-in-out;
+    /* --- Icônes --- */
+    .icon-box {
+        width: 80px !important;
+        height: 80px !important;
+        background-color: #f8f9fa !important;
+        /* Fond gris très clair */
+        color: #003d7a !important;
+        /* Bleu foncé */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        margin-bottom: 25px !important;
+        font-size: 32px !important;
+        transition: 0.3s !important;
+        border: 1px solid #dee2e6 !important;
     }
 
-    .services-item:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    .service-card:hover .icon-box {
+        background-color: #003d7a !important;
+        color: #ffffff !important;
+        border-color: #003d7a !important;
     }
 
-    .services-item:hover .services-content-icon {
-        background: #00bbff;
-        transform: rotate(10deg) scale(1.1);
+    /* --- Typographie --- */
+    .service-card h4 {
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+        color: #0b1c2d !important;
+        margin-bottom: 15px !important;
+        line-height: 1.4 !important;
     }
 
-    .services-item:hover i {
-        color: #fff !important;
+    .service-card p {
+        font-size: 0.95rem !important;
+        color: #555555 !important;
+        line-height: 1.6 !important;
+        flex-grow: 1 !important;
+        /* Aligne les boutons en bas */
     }
 
-    .services-item:hover h4 {
-        color: #00bbff;
+    /* --- Bouton "En savoir plus" --- */
+    .btn-service {
+        margin-top: 20px !important;
+        color: #003d7a !important;
+        text-decoration: none !important;
+        font-weight: 700 !important;
+        font-size: 0.85rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        transition: gap 0.3s !important;
     }
 
-    .services-item:hover p {
-        color: #333;
+    .btn-service i {
+        transition: transform 0.3s !important;
     }
 
-    .services-item .btn {
-        transition: all 0.3s ease-in-out;
+    .btn-service:hover {
+        color: #0b1c2d !important;
     }
 
-    .services-item .btn:hover {
-        transform: translateY(-3px) scale(1.05);
-        background-color: #00bbff;
-        border-color: #00bbff;
-    }
-
-    /* Coupe le texte après 3 lignes */
-    .text-truncate-3 {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+    .btn-service:hover i {
+        transform: translateX(5px) !important;
     }
 </style>

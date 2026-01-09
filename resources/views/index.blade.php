@@ -2,469 +2,302 @@
 
 
 @section('content')
-    @include('front.sections.carousel')
-    @include('front.sections.services')
-    <!-- À propos Start -->
-    <div class="container-fluid py-5 my-5" id="about">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <!-- Images -->
-                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                    <div class="h-100 position-relative">
-                        <img src="{{ asset('site/img/pexels-edmond-dantes-8555769.jpg') }}" class="img-fluid w-75 rounded"
-                            alt="TicAfrique - Solutions TIC" style="margin-bottom: 25%;">
-                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                            <img src="{{ asset('site/img/startae-team-7tXA8xwe4W4-unsplash.jpg') }}"
-                                class="img-fluid w-100 rounded" alt="Expertise numérique">
+@include('front.sections.carousel')
+@include('front.sections.services')
+<!-- À propos Start -->
+<section class="py-5" id="about" style="background-color: #ffffff !important;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
+                <div class="position-relative ps-5 pb-5">
+                    <img src="{{ asset('site/img/pexels-edmond-dantes-8555769.jpg') }}" class="img-fluid rounded shadow-lg w-100" alt="TicAfrique Solutions">
+                    <div class="position-absolute" style="width: 60%; bottom: -20px; left: -20px; z-index: 2;">
+                        <img src="{{ asset('site/img/startae-team-7tXA8xwe4W4-unsplash.jpg') }}" class="img-fluid rounded shadow-lg border border-5 border-white" alt="Expertise">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeIn" data-wow-delay=".5s">
+                <h5 class="fw-bold text-uppercase" style="color: #003d7a !important; letter-spacing: 2px !important;">PRESENTATION</h5>
+                <h1 class="mb-4 display-6 fw-bold" style="color: #0b1c2d !important;">Découvrez TicAfrique et ses solutions numériques</h1>
+                <p class="lead" style="color: #003d7a !important; font-weight: 600 !important;">
+                    TICAFRIQUE, département de SIP, est spécialisée dans le développement de solutions TIC innovantes.
+                </p>
+                <p class="text-muted mb-4">
+                    Notre mission est de <strong>réduire vos coûts, renforcer votre visibilité et optimiser vos performances</strong> à travers des services sur mesure en télécoms, développement web et communication digitale.
+                </p>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-check-circle fa-2x me-3" style="color: #003d7a !important;"></i>
+                            <span class="fw-bold text-dark">Approche Orientée Client</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-check-circle fa-2x me-3" style="color: #003d7a !important;"></i>
+                            <span class="fw-bold text-dark">Expertise Certifiée</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Texte -->
-                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                    <h5 class="text-primary">PRESENTATION</h5>
-                    <h1 class="mb-4">Découvrez TicAfrique et ses solutions numériques</h1>
+                <a href="{{ route('ticafrique.about') }}" class="btn-custom-blue">
+                    En savoir plus <i class="fa fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <p>
-                        <strong>TICAFRIQUE</strong>, département de SIP, est spécialisée dans le développement de solutions
-                        TIC innovantes pour accompagner les entreprises et organisations africaines dans leur transformation
-                        digitale.
-                    </p>
-                    <p>
-                        Notre mission est claire : <strong>réduire vos coûts, renforcer votre visibilité et optimiser vos
-                            performances</strong>
-                        à travers des services sur mesure en télécoms, développement web, communication digitale,
-                        hébergement et gestion de domaines.
-                    </p>
-                    <p class="mb-4">
-                        Avec une équipe passionnée et expérimentée, nous bâtissons des projets numériques efficaces et
-                        durables,
-                        en privilégiant une approche orientée client qui crée un véritable avantage concurrentiel.
-                    </p>
-
-                    <a href="{{ route('ticafrique.about') }}"
-                        class="btn rounded-pill px-5 py-3 text-decoration-none style-btn">
-                        En savoir plus
-                    </a>
-
+<section class="py-5" style="background-color: #ffffff !important; border-top: 1px solid #f0f0f0 !important;">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>100+</h3>
+                    <h5>Clients satisfaits</h5>
+                    <p>Des entreprises qui nous font confiance au quotidien.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>99%</h3>
+                    <h5>Croissance</h5>
+                    <p>Accélération de la transformation digitale.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>15+</h3>
+                    <h5>Années d'Expertise</h5>
+                    <p>Un savoir-faire reconnu dans le secteur des TIC.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>24/7</h3>
+                    <h5>Engagement</h5>
+                    <p>Un support fiable et un accompagnement personnalisé.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- À propos End -->
+</section>
 
-    <!-- Témoignages / Points forts Start -->
-    <div class="container-fluid py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5 wow fadeIn">
-                <h6 class="text-primary text-uppercase">Ce que disent nos clients</h6>
-                <h1 class="display-5">Des résultats concrets et visibles</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                    <div class="bg-white rounded shadow p-4 h-100 text-center">
-                        <i class="fas fa-smile fa-3x text-primary mb-3"></i>
-                        <h5>Clients satisfaits</h5>
-                        <p>Plus de 100 clients heureux de nos solutions digitales.</p>
-                    </div>
+<section class="py-5" style="background-color: #ffffff !important;">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeIn">
+            <h5 class="fw-bold text-uppercase" style="color: #003d7a !important;">Nos Références</h5>
+            <h2 class="fw-bold" style="color: #0b1c2d !important;">Ils nous font confiance</h2>
+        </div>
+        <div class="reference-slider">
+            <div class="reference-track">
+                @foreach ($references as $reference)
+                <div class="ref-logo">
+                    <img src="{{ asset('storage/' . $reference->icon) }}" alt="{{ $reference->title }}">
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="bg-white rounded shadow p-4 h-100 text-center">
-                        <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
-                        <h5>Croissance rapide</h5>
-                        <p>Des projets qui ont permis à nos clients d’atteindre de nouveaux sommets.</p>
-                    </div>
+                @endforeach
+                {{-- Doublon pour effet infini --}}
+                @foreach ($references as $reference)
+                <div class="ref-logo">
+                    <img src="{{ asset('storage/' . $reference->icon) }}" alt="{{ $reference->title }}">
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="bg-white rounded shadow p-4 h-100 text-center">
-                        <i class="fas fa-award fa-3x text-primary mb-3"></i>
-                        <h5>Expertise reconnue</h5>
-                        <p>Une équipe professionnelle et expérimentée dans le numérique.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="bg-white rounded shadow p-4 h-100 text-center">
-                        <i class="fas fa-heart fa-3x text-primary mb-3"></i>
-                        <h5>Engagement</h5>
-                        <p>Nous accompagnons nos clients de manière fiable et personnalisée.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- Témoignages / Points forts End -->
+</section>
 
+<style>
+    /* Bouton Personnalisé */
+    .btn-custom-blue {
+        background-color: #003d7a !important;
+        color: #ffffff !important;
+        padding: 15px 40px !important;
+        border-radius: 50px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: all 0.3s !important;
+        border: none !important;
+    }
 
-    {{-- j'ai desactivé la patie blog puisque ticafique n'a pas de blog pour le moment --}}
-    <!-- Blog Start -->
-    <div class="container-fluid blog py-5 mb-5 d-none">
-        <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Blog</h5>
-                <h1>Latest Blog & News</h1>
-            </div>
-            <div class="row g-5 justify-content-center">
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{ asset('site/img/blog-1.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
-                            style="top: -28px; right: 20px;">Web Design</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
-                            style="margin-top: -75px;">
-                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
-                                <a href="#" class="btn text-white">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                </div>
-                                <div class="blog-icon-2">
-                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{ asset('site/img/admin.jpg') }}"
-                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="">By Daniel Martin</h5>
-                            <span class="text-secondary">24 March 2023</span>
-                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
-                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                            <a href="#" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324
-                                    Share</small></a>
-                            <a href="#" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5
-                                    Comments</small></a>
-                        </div>
-                    </div>
-                </div>
+    .btn-custom-blue:hover {
+        background-color: #0b1c2d !important;
+        transform: scale(1.05) !important;
+        color: #ffffff !important;
+    }
 
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{ asset('site/img/blog-2.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
-                            style="top: -28px; right: 20px;">Development</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
-                            style="margin-top: -75px;">
-                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
-                                <a href="#" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                </div>
-                                <div class="blog-icon-2">
-                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{ asset('site/img/admin.jpg') }}"
-                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="">By Daniel Martin</h5>
-                            <span class="text-secondary">23 April 2023</span>
-                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
-                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                            <a href="#" class="text-white"><small><i
-                                        class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                            <a href="#" class="text-white"><small><i
-                                        class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
-                        </div>
-                    </div>
-                </div>
+    /* Stat Cards */
+    .stat-card {
+        background: #ffffff !important;
+        padding: 30px !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+        transition: 0.3s !important;
+        border: 1px solid #f0f0f0 !important;
+        height: 100% !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02) !important;
+    }
 
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{ asset('site/img/blog-3.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3 bg-primary text-white rounded"
-                            style="top: -28px; right: 20px;">Mobile App</span>
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
-                            style="margin-top: -75px;">
-                            <div class="blog-icon btn style-btn px-3 rounded-pill my-auto">
-                                <a href="#" class="btn text-white ">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn style-btn px-4 py-3 rounded-pill ">
-                                <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
-                                </div>
-                                <div class="blog-icon-2">
-                                    <a href="#" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="#" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{ asset('site/img/admin.jpg') }}"
-                                class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
-                            <h5 class="">By Daniel Martin</h5>
-                            <span class="text-secondary">30 jan 2023</span>
-                            <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum.
-                                Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
-                        </div>
-                        <div
-                            class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
-                            <a href="#" class="text-white"><small><i
-                                        class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
-                            <a href="#" class="text-white"><small><i
-                                        class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
-                        </div>
-                    </div>
-                </div>
+    .stat-card:hover {
+        box-shadow: 0 10px 30px rgba(0, 61, 122, 0.1) !important;
+        border-color: #003d7a !important;
+    }
 
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
+    .stat-icon {
+        width: 60px !important;
+        height: 60px !important;
+        background: rgba(0, 61, 122, 0.05) !important;
+        color: #003d7a !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        margin: 0 auto 20px !important;
+        font-size: 24px !important;
+    }
 
+    .stat-card h3 {
+        color: #003d7a !important;
+        font-weight: 800 !important;
+        margin-bottom: 5px !important;
+    }
 
-    {{-- j'ai desactivé cette partie parce les techniciens de ticafrique.... sont pas sur le site --}}
+    /* Slider Références */
+    .reference-slider {
+        overflow: hidden !important;
+        padding: 20px 0 !important;
+        position: relative !important;
+    }
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 mb-5 team d-none">
-        <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                <h5 class="text-primary">Our Team</h5>
-                <h1>Meet our expert Team</h1>
-            </div>
-            <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+    .reference-track {
+        display: flex !important;
+        width: calc(250px * 10) !important;
+        /* Ajuster selon nombre d'images */
+        animation: scroll 30s linear infinite !important;
+    }
 
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{ asset('site/img/team-1.jpg') }}" class="img-fluid w-100 rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4>Full Name</h4>
-                                <p class="m-0">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    .ref-logo {
+        width: 180px !important;
+        margin: 0 30px !important;
+        filter: grayscale(100%) !important;
+        opacity: 0.6 !important;
+        transition: 0.3s !important;
+    }
 
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{ asset('site/img/team-2.jpg') }}" class="img-fluid w-100 rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4>Full Name</h4>
-                                <p class="m-0">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    .ref-logo:hover {
+        filter: grayscale(0%) !important;
+        opacity: 1 !important;
+    }
 
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{ asset('site/img/team-3.jpg') }}" class="img-fluid w-100 rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4>Full Name</h4>
-                                <p class="m-0">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    .ref-logo img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
 
-                <div class="rounded team-item">
-                    <div class="team-content">
-                        <div class="team-img-icon">
-                            <div class="team-img rounded-circle">
-                                <img src="{{ asset('site/img/team-4.jpg') }}" class="img-fluid w-100 rounded-circle"
-                                    alt="">
-                            </div>
-                            <div class="team-name text-center py-3">
-                                <h4>Full Name</h4>
-                                <p class="m-0">Designation</p>
-                            </div>
-                            <div class="team-icon d-flex justify-content-center pb-4">
-                                <a class="btn btn-square style-btn text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square style-btn  text-white rounded-circle m-1" href="#"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
 
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
+        100% {
+            transform: translateX(calc(-250px * 5));
+        }
+    }
 
+    /* Carousel scrolling */
+    .references-track {
+        display: flex;
+        animation: scroll 20s linear infinite;
+        gap: 1.5rem;
+        align-items: center;
+    }
 
-    @include('front.sections.temoignages')
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
 
-    <!-- Références Début -->
-    <div class="container-fluid references py-5 bg-light" id="references">
-        <div class="container">
+        100% {
+            transform: translateX(-50%);
+        }
+    }
 
-            <!-- Titre centré -->
-            @if (count($references) > 0)
-                <div class="text-center references-title mb-5 wow fadeIn" data-wow-delay=".3s">
-                    <h5 class="text-primary">Nos Références</h5>
-                    <h1 class="fw-bold">Ils nous font confiance</h1>
-                </div>
-            @endif
+    /* Uniformisation des logos et des cartes */
+    .reference-card {
+        width: 150px;
+        /* même largeur pour toutes les cartes */
+        height: 150px;
+        /* même hauteur */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #ffffff;
+    }
 
-            <!-- Carousel auto-scroll -->
-            <div class="d-flex overflow-hidden">
-                <div class="d-flex references-track">
-                    @foreach ($references as $reference)
-                        <div class="reference-item text-center">
-                            <div class="reference-card p-3 rounded bg-white shadow-sm">
-                                <img src="{{ asset('storage/' . $reference->icon) }}"
-                                    alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid reference-icon">
-                                <p class="small mt-2 mb-0">{{ $reference->title }}</p>
-                            </div>
-                        </div>
-                    @endforeach
+    .reference-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
 
-                    {{-- Boucle infinie --}}
-                    @foreach ($references as $reference)
-                        <div class="reference-item text-center">
-                            <div class="reference-card p-3 rounded bg-white shadow-sm">
-                                <img src="{{ asset('storage/' . $reference->icon) }}"
-                                    alt="{{ $reference->title ?? 'Référence' }}" class="img-fluid reference-icon">
-                                <p class="small mt-2 mb-0">{{ $reference->title }}</p>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
+    .reference-icon {
+        max-height: 80px;
+        object-fit: contain;
+        transition: transform 0.3s;
+    }
 
-        </div>
-    </div>
-    <!-- Références Fin -->
+    .reference-card:hover .reference-icon {
+        transform: scale(1.1);
+    }
 
-    <style>
-        /* Carousel scrolling */
+    /* Titre centré avec largeur max */
+    .references-title {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
         .references-track {
-            display: flex;
-            animation: scroll 20s linear infinite;
-            gap: 1.5rem;
-            align-items: center;
+            animation-duration: 25s;
         }
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* Uniformisation des logos et des cartes */
         .reference-card {
-            width: 150px;
-            /* même largeur pour toutes les cartes */
-            height: 150px;
-            /* même hauteur */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            background-color: #ffffff;
-        }
-
-        .reference-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            width: 120px;
+            height: 120px;
         }
 
         .reference-icon {
-            max-height: 80px;
-            object-fit: contain;
-            transition: transform 0.3s;
+            max-height: 60px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .reference-card {
+            width: 100px;
+            height: 100px;
         }
 
-        .reference-card:hover .reference-icon {
-            transform: scale(1.1);
+        .reference-icon {
+            max-height: 50px;
         }
-
-        /* Titre centré avec largeur max */
-        .references-title {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .references-track {
-                animation-duration: 25s;
-            }
-
-            .reference-card {
-                width: 120px;
-                height: 120px;
-            }
-
-            .reference-icon {
-                max-height: 60px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .reference-card {
-                width: 100px;
-                height: 100px;
-            }
-
-            .reference-icon {
-                max-height: 50px;
-            }
-        }
-    </style>
+    }
+</style>
 @endsection

@@ -1,115 +1,164 @@
 @extends('front.layouts.base')
 
-@section('title', 'Soumettre un projet')
+@section('title', 'Soumettre un projet - TIC@FRIQUE')
 
 @section('content')
-    <div class="container my-5">
+<section class="py-5 bg-light">
+    <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
 
-                <!-- Titre -->
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold text-dark"><i class="fa fa-lightbulb text-warning me-2"></i>Soumettre un projet</h2>
-                    <p class="text-muted">Partagez votre idée avec nous et notre équipe vous contactera rapidement 🚀</p>
+                <div class="text-center mb-5 wow fadeIn">
+                    <h5 class="fw-bold text-uppercase" style="color: #003d7a; letter-spacing: 2px;">Briefing de projet</h5>
+                    <h1 class="display-5 fw-bold" style="color: #0b1c2d;">Prêt à lancer votre projet ?</h1>
+                    <div class="mx-auto mt-3" style="width: 60px; height: 3px; background-color: #003d7a;"></div>
+                    <p class="text-muted mt-4">Décrivez-nous votre vision et recevez une analyse personnalisée de nos experts sous 48h.</p>
                 </div>
 
-                <!-- Carte formulaire -->
-                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden wow fadeInUp">
+                    <div class="card-body p-4 p-md-5">
 
-                    <!-- Header -->
-                    <div class="card-header text-white text-center py-4"
-                        style="background: linear-gradient(135deg, #007bff, #00c6ff);">
-                        <h4 class="mb-0 fw-bold"><i class="fa fa-upload me-2"></i>Soumettre votre projet</h4>
-                        <p class="mb-0 small">Remplissez le formulaire ci-dessous</p>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-
-                        <!-- Erreurs -->
                         @if ($errors->any())
-                            <div class="alert alert-danger rounded-3 mb-4">
-                                <ul class="mb-0">
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
+                        <div class="alert alert-danger border-0 shadow-sm mb-4 rounded-3">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                <li><small>{{ $error }}</small></li>
+                                @endforeach
+                            </ul>
+                        </div>
                         @endif
 
-                        <!-- Message succès -->
                         @if (session('success'))
-                            <div class="alert alert-success text-center rounded-3 mb-4">
-                                <i class="fa fa-check-circle me-2"></i> {{ session('success') }}
-                            </div>
+                        <div class="alert alert-success border-0 shadow-sm text-center mb-4 rounded-3">
+                            <i class="fa fa-check-circle me-2"></i> {{ session('success') }}
+                        </div>
                         @endif
 
-                        <!-- Formulaire -->
-                        <form action="{{ route('project.store') }}" method="POST" novalidate>
+                        <form action="{{ route('project.store') }}" method="POST" class="project-form">
                             @csrf
 
-                            <!-- Nom -->
-                            <div class="mb-4 position-relative">
-                                <i
-                                    class="fa fa-user position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
-                                <input type="text" class="form-control form-control-lg rounded-3 ps-5 shadow-sm"
-                                    id="name" name="name" placeholder="Nom complet" required>
-                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small text-uppercase">Votre Nom complet</label>
+                                    <div class="input-group-custom">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Ex: Jean Koffi" required>
+                                    </div>
+                                </div>
 
-                            <!-- Profession -->
-                            <div class="mb-4 position-relative">
-                                <i
-                                    class="fa fa-briefcase position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
-                                <input type="text" class="form-control form-control-lg rounded-3 ps-5 shadow-sm"
-                                    id="profession" name="profession" placeholder="Profession" required>
-                            </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small text-uppercase">Votre Profession</label>
+                                    <div class="input-group-custom">
+                                        <i class="fa fa-briefcase"></i>
+                                        <input type="text" class="form-control" name="profession" value="{{ old('profession') }}" placeholder="Ex: Entrepreneur" required>
+                                    </div>
+                                </div>
 
-                            <!-- Téléphone -->
-                            <div class="mb-4 position-relative">
-                                <i
-                                    class="fa fa-phone position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary"></i>
-                                <input type="tel" class="form-control form-control-lg rounded-3 ps-5 shadow-sm"
-                                    id="phone" name="phone" placeholder="+225 07 00 00 00 00" required>
-                            </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small text-uppercase">Numéro de téléphone (WhatsApp de préférence)</label>
+                                    <div class="input-group-custom">
+                                        <i class="fa fa-phone"></i>
+                                        <input type="tel" class="form-control" name="phone" value="{{ old('phone') }}" placeholder="+225 07 ..." required>
+                                    </div>
+                                </div>
 
-                            <!-- Description -->
-                            <div class="mb-4 position-relative">
-                                <i
-                                    class="fa fa-file-alt position-absolute top-0 start-0 translate-middle-y ms-3 mt-3 text-secondary"></i>
-                                <textarea class="form-control form-control-lg rounded-3 ps-5 pt-4 shadow-sm" id="description" name="description"
-                                    rows="5" placeholder="Description du projet..." required></textarea>
-                            </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small text-uppercase">Détails de votre projet</label>
+                                    <div class="input-group-custom align-items-start">
+                                        <i class="fa fa-pen-nib mt-3"></i>
+                                        <textarea class="form-control" name="description" rows="6"
+                                            placeholder="Expliquez-nous votre besoin (Objectifs, budget estimé, délais souhaités...)" required>{{ old('description') }}</textarea>
+                                    </div>
+                                </div>
 
-                            <!-- Bouton -->
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow-sm hover-scale">
-                                    <i class="fa fa-paper-plane me-2"></i> Envoyer
-                                </button>
+                                <div class="col-12 mt-5 text-center">
+                                    <button type="submit" class="btn btn-submit-project">
+                                        <span>Soumettre le projet</span>
+                                        <i class="fa fa-arrow-right ms-2"></i>
+                                    </button>
+                                    <p class="text-muted mt-3 small">
+                                        <i class="fa fa-lock me-1"></i> Vos données sont sécurisées et confidentielles.
+                                    </p>
+                                </div>
                             </div>
                         </form>
-
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Styles personnalisés -->
-    <style>
-        /* Bouton hover */
-        .hover-scale {
-            transition: all 0.3s ease-in-out;
-        }
+<style>
+    /* --- Structure du Formulaire --- */
+    .project-form label {
+        color: #0b1c2d;
+        margin-bottom: 8px;
+        display: block;
+    }
 
-        .hover-scale:hover {
-            transform: scale(1.05);
-            background-color: #32b4ff !important;
-        }
+    /* --- Input Custom Group --- */
+    .input-group-custom {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
 
-        /* Form-control avec icônes */
-        .form-control:focus {
-            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    .input-group-custom i {
+        position: absolute;
+        left: 20px;
+        color: #003d7a;
+        font-size: 1rem;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    .input-group-custom .form-control {
+        padding: 15px 15px 15px 55px !important;
+        border: 2px solid #f0f0f0 !important;
+        border-radius: 12px !important;
+        font-size: 1rem !important;
+        background-color: #fafafa !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .input-group-custom .form-control:focus {
+        background-color: #fff !important;
+        border-color: #003d7a !important;
+        box-shadow: 0 10px 20px rgba(0, 61, 122, 0.05) !important;
+        outline: none;
+    }
+
+    .input-group-custom .form-control:focus+i {
+        color: #003d7a;
+    }
+
+    /* --- Bouton Soumettre --- */
+    .btn-submit-project {
+        background-color: #003d7a !important;
+        color: white !important;
+        padding: 18px 45px !important;
+        border-radius: 50px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        border: none !important;
+        transition: all 0.3s !important;
+        box-shadow: 0 10px 25px rgba(0, 61, 122, 0.2) !important;
+    }
+
+    .btn-submit-project:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 15px 30px rgba(0, 61, 122, 0.3) !important;
+        background-color: #0b1c2d !important;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+        .card-body {
+            padding: 30px 20px !important;
         }
-    </style>
+    }
+</style>
 @endsection

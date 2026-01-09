@@ -1,239 +1,212 @@
-<!-- Footer Start -->
-<div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+<div class="container-fluid footer wow fadeIn" data-wow-delay=".3s" style="background-color: #001d3d; border-top: 3px solid var(--primary-blue);">
     <div class="container pt-5 pb-4">
-
         <div class="row g-5">
-            <!-- À propos -->
             <div class="col-lg-3 col-md-6 text-center text-md-start">
-                <a href="index.html">
-                    <h4 class="text-white fw-bold d-block">Tic<span class="text-info">Afrique</span></h4>
+                <a href="{{ route('ticafrique.index') }}">
+                    <h4 class="text-white fw-bold d-block">Tic<span class="text-info">@frique</span></h4>
                 </a>
-                <p class="mt-4 text-light">
-                    TicAfrique est une agence spécialisée dans les solutions informatiques innovantes, offrant des
-                    services de qualité pour répondre aux besoins de votre entreprise.
+                <p class="mt-4 text-white-50 small">
+                    Expert en solutions technologiques, Tic@frique accompagne la transformation digitale des entreprises avec des infrastructures Cloud, Télécom et Marketing innovantes.
                 </p>
-
                 <div class="d-flex justify-content-center justify-content-md-start mt-3 gap-2">
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr"
-                        class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-facebook-f text-primary"></i>
-                    </a>
-
-                    <!-- X (anciennement Twitter) -->
-                    <a href="https://x.com/ticafrique" class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="bi bi-twitter-x"></i>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/ticafrique"
-                        class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="bi bi-instagram text-danger"></i>
-                    </a>
-
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/company/ticafrique/posts/?feedView=all"
-                        class="btn btn-light btn-square rounded-circle social-icon">
-                        <i class="fab fa-linkedin-in text-primary"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Liens rapides -->
-            <div class="col-lg-3 col-md-6 text-center text-md-start">
-                <h5 class="text-info mb-3">Liens utiles</h5>
-                <div class="d-flex flex-column">
-                    <a href="#about" class="mb-2 text-white footer-link">
-                        <i class="fas fa-angle-right me-2"></i>À propos
-                    </a>
-                    <a href="{{ route('ticafrique.contacts') }}" class="mb-2 text-white footer-link">
-                        <i class="fas fa-angle-right me-2"></i>Contact
-                    </a>
-                    <a href="#services" class="mb-2 text-white footer-link">
-                        <i class="fas fa-angle-right me-2"></i>Nos Services
-                    </a>
+                    <a href="https://facebook.com/ticafrique" class="social-btn-footer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com/company/ticafrique" class="social-btn-footer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/ticafrique" class="social-btn-footer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
-            <!-- Liens d'aide -->
             <div class="col-lg-3 col-md-6 text-center text-md-start">
-                <h5 class="text-info mb-3">Aide</h5>
-                <div class="d-flex flex-column">
-                    <a href="#" class="mb-2 text-white footer-link"><i
-                            class="fas fa-angle-right me-2 d-none"></i>Conditions d'utilisation</a>
-                    <a href="#" class="mb-2 text-white footer-link"><i
-                            class="fas fa-angle-right me-2"></i>Politique de confidentialité</a>
-                    <a href="#" class="mb-2 text-white footer-link"><i
-                            class="fas fa-angle-right me-2"></i>Aide</a>
-                    <a href="#" class="mb-2 text-white footer-link"><i class="fas fa-angle-right me-2"></i>FAQ</a>
-                    <a href="{{ route('ticafrique.contacts') }}" class="mb-2 text-white footer-link"><i
-                            class="fas fa-angle-right me-2"></i>Contact</a>
+                <h5 class="text-info mb-4">Liens rapides</h5>
+                <div class="d-flex flex-column gap-2">
+                    <a href="{{ route('ticafrique.about') }}" class="footer-link"><i class="fas fa-chevron-right me-2 small"></i>Présentation</a>
+                    <a href="{{ route('ticafrique.references') }}" class="footer-link"><i class="fas fa-chevron-right me-2 small"></i>Références</a>
+                    <a href="{{ route('ticafrique.contacts') }}" class="footer-link"><i class="fas fa-chevron-right me-2 small"></i>Nous contacter</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right me-2 small"></i>FAQ</a>
                 </div>
             </div>
 
-            <!-- Contact -->
             <div class="col-lg-3 col-md-6 text-center text-md-start">
-                <h5 class="text-info mb-3">Contactez-nous</h5>
-                <div class="text-white d-flex flex-column">
-                    <a href="{{ route('ticafrique.contacts') }}"
-                        class="pb-3 text-light border-bottom border-primary footer-link">
-                        <i class="fas fa-map-marker-alt me-2"></i>Cocody-Angré, Cité Belles Fleurs 3
+                <h5 class="text-info mb-4">Nos Expertises</h5>
+                <div class="d-flex flex-column gap-2">
+                    <a href="https://communication-web.ci/home" class="footer-link"><i class="fas fa-check-circle text-info me-2 small"></i>Digitalisation</a>
+                    <a href="https://sigma-web.ci/" class="footer-link"><i class="fas fa-check-circle text-info me-2 small"></i>Hébergement Cloud</a>
+                    <a href="https://sigma-telecom.ci/" class="footer-link"><i class="fas fa-check-circle text-info me-2 small"></i>Solutions Télécom</a>
+                    <a href="https://sms-marketing.ci/" class="footer-link"><i class="fas fa-check-circle text-info me-2 small"></i>SMS Marketing</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-center text-md-start">
+                <h5 class="text-info mb-4">Contactez-nous</h5>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start text-white-50">
+                        <div class="contact-icon-circle me-3"><i class="fas fa-map-marker-alt"></i></div>
+                        <small>Cocody-Angré, Cité Belles Fleurs 3</small>
+                    </div>
+                    <a href="tel:+2252522002077" class="d-flex align-items-center justify-content-center justify-content-md-start footer-link">
+                        <div class="contact-icon-circle me-3"><i class="fas fa-phone-alt"></i></div>
+                        <small>+225 25 220 020 77</small>
                     </a>
-                    <a href="tel:+2252522002077" class="py-3 text-light border-bottom border-primary footer-link">
-                        <i class="fas fa-phone-alt me-2"></i>+225 25 220 020 77
-                    </a>
-                    <a href="mailto:info@ticafrique.com"
-                        class="py-3 text-light border-bottom border-primary footer-link">
-                        <i class="fas fa-envelope me-2"></i>info@ticafrique.com
+                    <a href="mailto:info@ticafrique.com" class="d-flex align-items-center justify-content-center justify-content-md-start footer-link">
+                        <div class="contact-icon-circle me-3"><i class="fas fa-envelope"></i></div>
+                        <small>info@ticafrique.com</small>
                     </a>
                 </div>
             </div>
         </div>
 
-        <hr class="text-light mt-5 mb-4">
+        <hr class="mt-5 mb-4 border-secondary opacity-25">
 
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
-                <span class="text-white">
-                    <i class="fas fa-copyright me-2"></i>
-                    <a href="#" class="text-info">TicAfrique</a>, Tous droits réservés.
+                <span class="text-white-50 small">
+                    &copy; 2026 <a href="#" class="text-info fw-bold text-decoration-none">Tic@frique</a>. Tous droits réservés.
                 </span>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <span class="text-light">Conçu par <a href="#" class="text-info">TicAfrique</a></span>
+                <span class="text-white-50 small">Partenaire de votre transformation digitale.</span>
             </div>
         </div>
-
     </div>
 
-    <!-- Floating WhatsApp & Back to Top -->
     <div class="floating-buttons">
-        <a href="https://wa.me/+2250778599242" target="_blank" class="btn whatsapp-btn pulse">
-            <i class="fab fa-whatsapp fa-lg text-white"></i>
+        <a href="https://wa.me/+2250778599242" target="_blank" class="btn whatsapp-btn pulse-info">
+            <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="#" class="btn back-to-top-btn rotate">
-            <i class="fa fa-arrow-up fa-lg text-white"></i>
+        <a href="#" id="backToTop" class="btn back-to-top-btn">
+            <i class="fa fa-chevron-up"></i>
         </a>
     </div>
 </div>
-<!-- Footer End -->
-
 <style>
-    /* Footer links hover */
-    .footer a.footer-link {
-        transition: color 0.3s, transform 0.3s;
+    /* Variables pour l'uniformité */
+    :root {
+        --primary-blue: #003d7a;
+        --accent-info: #0dcaf0;
     }
 
-    .footer a.footer-link:hover {
-        color: #17a2ff;
-        transform: translateX(3px);
+    /* Footer Links */
+    .footer-link {
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-decoration: none;
+        transition: 0.3s all ease;
+        font-size: 0.9rem;
+    }
+
+    .footer-link:hover {
+        color: var(--accent-info) !important;
+        transform: translateX(5px);
+    }
+
+    /* Social Icons Footer */
+    .social-btn-footer {
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 50%;
+        transition: 0.3s;
         text-decoration: none;
     }
 
-    /* Social icons hover */
-    .footer .social-icon i {
-        color: #1842b6;
-        transition: color 0.3s, transform 0.3s;
-    }
-
-    .footer .social-icon:hover i {
-        color: #17a2ff;
-        transform: scale(1.2);
-    }
-
-    .footer .social-icon {
-        transition: transform 0.3s;
-    }
-
-    .footer .social-icon:hover {
+    .social-btn-footer:hover {
+        background: var(--accent-info);
+        color: var(--primary-blue);
         transform: translateY(-3px);
     }
 
-    /* Floating buttons */
-    .floating-buttons {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        z-index: 9999;
-    }
-
-    .floating-buttons .btn {
-        width: 50px;
-        height: 50px;
+    /* Contact Circle */
+    .contact-icon-circle {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        border: 1px solid rgba(13, 202, 240, 0.3);
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: var(--accent-info);
+        font-size: 0.8rem;
+    }
+
+    /* Floating Buttons */
+    .floating-buttons {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+    }
+
+    .whatsapp-btn,
+    .back-to-top-btn {
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-        transition: all 0.3s ease;
-    }
-
-    /* WhatsApp button */
-    .whatsapp-btn {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         border: none;
+        transition: 0.3s;
     }
 
-    .whatsapp-btn:hover {
-        transform: translateY(-4px) scale(1.1);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    .whatsapp-btn {
+        background: #25D366;
+        font-size: 1.5rem;
     }
 
-    /* Pulse animation */
-    .pulse {
-        animation: pulse-animation 2s infinite;
+    .back-to-top-btn {
+        background: var(--primary-blue);
+        font-size: 1.2rem;
+        display: none;
     }
 
-    @keyframes pulse-animation {
+    /* Caché par défaut */
+
+    .whatsapp-btn:hover,
+    .back-to-top-btn:hover {
+        transform: scale(1.1) translateY(-5px);
+    }
+
+    /* Animation Pulse Info */
+    .pulse-info {
+        animation: pulse-info-anim 2s infinite;
+    }
+
+    @keyframes pulse-info-anim {
         0% {
-            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
         }
 
-        50% {
-            transform: scale(1.1);
+        70% {
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
         }
 
         100% {
-            transform: scale(1);
-        }
-    }
-
-    /* Back to Top button */
-    .back-to-top-btn {
-        background: linear-gradient(135deg, #6c757d 0%, #17a2ff 100%);
-        border: none;
-    }
-
-    .back-to-top-btn:hover {
-        transform: translateY(-4px) rotate(-10deg) scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Add rotate class for subtle rotation */
-    .rotate {
-        transition: transform 0.3s ease;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 576px) {
-        .floating-buttons {
-            right: 15px;
-            bottom: 15px;
-        }
-
-        .floating-buttons .btn {
-            width: 45px;
-            height: 45px;
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
         }
     }
 </style>
 
 <script>
-    document.querySelector('.back-to-top-btn').addEventListener('click', function(e) {
+    const backToTop = document.getElementById('backToTop');
+
+    // Affiche le bouton "Back to Top" seulement après 300px de scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'flex';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    backToTop.addEventListener('click', (e) => {
         e.preventDefault();
         window.scrollTo({
             top: 0,

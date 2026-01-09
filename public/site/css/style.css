@@ -344,13 +344,13 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    /* background: var(--bs-primary); */
     border-radius: 0 50px 50px 0;
     opacity: 1;
 }
 
 .carousel-control-prev:hover {
-    background: var(--bs-secondary);
+    /* background: var(--bs-secondary); */
     transition: .8s;
 }
 
@@ -360,13 +360,13 @@
     position: absolute;
     top: 50%;
     right: 0;
-    background: var(--bs-primary);
+    /* background: var(--bs-primary); */
     border-radius: 50px 0 0 50px;
     opacity: 1;
 }
 
 .carousel-control-next:hover {
-    background: var(--bs-secondary);
+    /* background: var(--bs-secondary); */
     transition: .8s;
 }
 
