@@ -55,9 +55,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #787878;
-    /* 
-    background: linear-gradient(90deg, #89f7fe, #66a6ff); 
-    */
+  
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    
