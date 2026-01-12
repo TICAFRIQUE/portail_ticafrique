@@ -76,10 +76,10 @@
 
             <div class="col-lg-7 wow fadeIn" data-wow-delay=".5s">
                 <h5 class="fw-bold text-uppercase" style="color: #003d7a !important; letter-spacing: 2px !important;">À propos de nous</h5>
-                <h1 class="display-5 fw-bold mb-4" style="color: #0b1c2d !important;">Découvrez <span style="color: #003d7a !important;">TIC@FRIQUE</span> et ses solutions numériques</h1>
+                <h1 class="display-5 fw-bold mb-4" style="color: #0b1c2d !important;">Découvrez <span style="color: #003d7a !important;">TICAFRIQUE</span> et ses solutions numériques</h1>
 
                 <p class="lead mb-4" style="color: #444 !important; line-height: 1.8 !important;">
-                    <strong>TIC@FRIQUE</strong>, département de SIP dédié aux technologies de l’information, se consacre au développement de solutions innovantes pour les organisations africaines.
+                    <strong>TICAFRIQUE</strong>, département de SIP dédié aux technologies de l’information, se consacre au développement de solutions innovantes pour les organisations africaines.
                 </p>
 
                 <div class="row g-3 mb-4">
