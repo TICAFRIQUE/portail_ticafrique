@@ -85,7 +85,7 @@
     </div>
 </section>
 
-<section class="py-5" style="background-color: #ffffff !important;">
+<!-- <section class="py-5" style="background-color: #ffffff !important;">
     <div class="container py-4">
         <div class="text-center mb-5">
             <h2 class="fw-bold" style="color: #0b1c2d !important;">Nos Valeurs Fondamentales</h2>
@@ -96,37 +96,140 @@
                 <div class="value-item">
                     <i class="fas fa-trophy"></i>
                     <h6>Performance</h6>
+                    <p> être parmi les meilleurs ; créer de la valeur.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
                 <div class="value-item">
                     <i class="fas fa-handshake"></i>
                     <h6>Proximité</h6>
+                    <p>être toujours proche de nos clients; créer une confiance mutuelle.</p>
                 </div>
             </div>
             <div class="col-md-4 col-lg-2">
                 <div class="value-item">
                     <i class="fas fa-lightbulb"></i>
                     <h6>Innovation</h6>
+                    <p>procurer des solutions novatrices ; explorer de nouvelles pistes de satisfaction.</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-2">
                 <div class="value-item">
                     <i class="fas fa-shield-alt"></i>
                     <h6>Intégrité</h6>
+                    <p>être conforme à nos valeurs ; respect de l’éthique </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-2">
                 <div class="value-item">
                     <i class="fas fa-certificate"></i>
                     <h6>Professionnalisme</h6>
+                    <p>assurer un service de qualité répondre aux attentes de nos clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark display-6">Nos Valeurs Fondamentales</h2>
+            <div class="mx-auto rounded" style="width: 60px; height: 4px; background-color: #003d7a;"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-2">
+                <div class="value-card h-100 p-3">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h6 class="fw-bold">Performance</h6>
+                    <p class="small text-muted mb-0">Être parmi les meilleurs et créer de la valeur durable.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-2">
+                <div class="value-card h-100 p-3">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h6 class="fw-bold">Proximité</h6>
+                    <p class="small text-muted mb-0">Être proche de nos clients pour une confiance mutuelle.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-2">
+                <div class="value-card h-100 p-3">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h6 class="fw-bold">Innovation</h6>
+                    <p class="small text-muted mb-0">Explorer de nouvelles pistes pour des solutions novatrices.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-2">
+                <div class="value-card h-100 p-3">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h6 class="fw-bold">Intégrité</h6>
+                    <p class="small text-muted mb-0">Respect de l’éthique et conformité à nos engagements.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-2">
+                <div class="value-card h-100 p-3">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h6 class="fw-bold">Professionnalisme</h6>
+                    <p class="small text-muted mb-0">Assurer un service de qualité répondant à vos attentes.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
 <style>
+    .value-card {
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        background: #fdfdfd;
+    }
+
+    .value-card:hover {
+        transform: translateY(-8px);
+        background: #ffffff;
+        box-shadow: 0 10px 25px rgba(0, 61, 122, 0.1);
+        border-color: #003d7a;
+    }
+
+    .value-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: rgba(0, 61, 122, 0.05);
+        color: #003d7a;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+
+    .value-card:hover .value-icon {
+        background: #003d7a;
+        color: #fff;
+    }
+
+    .value-card h6 {
+        color: #0b1c2d;
+        margin-top: 10px;
+    }
+
     /* --- Styles de la page À Propos --- */
 
     /* Boîtes Vision/Mission/Métier */

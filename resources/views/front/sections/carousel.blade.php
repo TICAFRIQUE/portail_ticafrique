@@ -1,21 +1,36 @@
 @php
-// On définit une structure commune pour éviter la répétition de code
+// On définit les services par défaut si la base de données est vide
 $items = $carrousels->count() < 1 ? [
     (object)[ 'image'=> 'site/img/carousel-1.jpg',
-    'titre' => 'Solutions IT Innovantes',
-    'sous_titre' => 'Boostez votre business avec le digital',
-    'description' => 'Nous créons des solutions numériques sur mesure pour propulser votre croissance.',
+    'titre' => 'Digitalisation & Communication',
+    'sous_titre' => 'Transformez votre présence en ligne',
+    'description'=> 'Expertise en développement et solutions digitales pour moderniser votre entreprise avec TICAFRIQUE.',
     'is_default' => true
     ],
     (object)[
     'image' => 'site/img/carousel-2.jpg',
-    'titre' => 'Services Digitaux de Qualité',
-    'sous_titre' => 'L\'expertise au service de votre vision',
-    'description' => 'Du développement web à l’hébergement et au marketing digital.',
+    'titre' => 'Domaine & Hébergement ',
+    'sous_titre' => 'Sécurité & Performance',
+    'description'=> 'Des infrastructures robustes et un hébergement haute disponibilité pour vos données critiques.',
+    'is_default' => true
+    ],
+    (object)[
+    'image' => 'site/img/carousel-1.jpg',
+    'titre' => 'Solutions Télécom',
+    'sous_titre' => 'Connectivité sans limite',
+    'description'=> 'Infrastructures réseaux et télécommunications avancées pour une connectivité optimale.',
+    'is_default' => true
+    ],
+    (object)[
+    'image' => 'site/img/carousel-2.jpg',
+    'titre' => 'SMS Marketing',
+    'sous_titre' => 'Communiquez avec impact',
+    'description'=> 'Atteignez vos clients instantanément grâce à nos solutions de campagnes SMS ciblées.',
     'is_default' => true
     ]
     ] : $carrousels;
     @endphp
+
 
     <div class="container-fluid px-0">
         <div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -34,7 +49,7 @@ $items = $carrousels->count() < 1 ? [
                                     <h6 class="text-uppercase fw-bold mb-3 animated slideInDown" style="color: #ffffff; letter-spacing: 3px;">
                                         <span class="px-3 py-1" style="background-color: #003d7a;">{{ $item->titre }}</span>
                                     </h6>
-                                    <h1 class="display-2 text-white mb-4 animated slideInRight fw-bold">
+                                    <h1 class="display-2 text-white mb-4 animated slideInRight fw-semibold">
                                         {{ $item->sous_titre }}
                                     </h1>
                                     <p class="mb-5 text-white fs-5 animated slideInDown d-none d-md-block" style="opacity: 0.9;">

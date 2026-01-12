@@ -19,6 +19,18 @@
                     </a>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-sms"></i>
+                    </div>
+                    <h4>SMS Marketing</h4>
+                    <p>Touchez vos clients directement grâce à des campagnes SMS rapides et efficaces.</p>
+                    <a href="https://sms-marketing.ci/" class="btn-service">
+                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
 
             <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="service-card">
@@ -46,18 +58,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="service-card">
-                    <div class="icon-box">
-                        <i class="fas fa-sms"></i>
-                    </div>
-                    <h4>SMS Marketing</h4>
-                    <p>Touchez vos clients directement grâce à des campagnes SMS rapides et efficaces.</p>
-                    <a href="https://sms-marketing.ci/" class="btn-service">
-                        En savoir plus <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
