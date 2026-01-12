@@ -17,7 +17,7 @@ $items = $carrousels->count() < 1 ? [
     ] : $carrousels;
     @endphp
 
-    <div class="container-fluid px-0 mt-5">
+    <div class="container-fluid px-0">
         <div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 @foreach ($items as $key => $item)
