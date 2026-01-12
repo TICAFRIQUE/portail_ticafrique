@@ -1,7 +1,8 @@
 @extends('front.layouts.base')
 
 @section('content')
-<section class="py-5" style="background-color: #ffffff !important;">
+<!-- <section class="py-5" style="background-color: #ffffff !important;">
+
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
@@ -30,25 +31,80 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center p-3 rounded-3" style="background-color: #f8faff !important; border-left: 4px solid #003d7a !important;">
                             <i class="fas fa-chart-line me-3" style="color: #003d7a !important; font-size: 1.5rem;"></i>
-                            <span class="fw-bold text-dark">Web Marketing (SEO)</span>
+                            <span class="fw-bold text-dark">Digitalisation & Communication</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex align-items-center p-3 rounded-3" style="background-color: #f8faff !important; border-left: 4px solid #003d7a !important;">
                             <i class="fas fa-server me-3" style="color: #003d7a !important; font-size: 1.5rem;"></i>
-                            <span class="fw-bold text-dark">Hébergement Robuste</span>
+                            <span class="fw-bold text-dark">Solutions Télécom</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex align-items-center p-3 rounded-3" style="background-color: #f8faff !important; border-left: 4px solid #003d7a !important;">
                             <i class="fas fa-globe me-3" style="color: #003d7a !important; font-size: 1.5rem;"></i>
-                            <span class="fw-bold text-dark">Gestion de Domaines</span>
+                            <span class="fw-bold text-dark">Domaine & Hébergement</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex align-items-center p-3 rounded-3" style="background-color: #f8faff !important; border-left: 4px solid #003d7a !important;">
                             <i class="fas fa-sms me-3" style="color: #003d7a !important; font-size: 1.5rem;"></i>
-                            <span class="fw-bold text-dark">Communication SMS</span>
+                            <span class="fw-bold text-dark">SMS Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section class="py-5" style="background-color: #ffffff !important;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
+                <div class="position-relative ps-4 pb-4">
+                    <img src="{{ asset('site/img/pexels-edmond-dantes-8555769.jpg') }}"
+                        class="img-fluid rounded shadow-lg w-100"
+                        style="border: 1px solid #eee !important;"
+                        alt="TicAfrique Solutions">
+                    <div class="position-absolute" style="width: 65%; bottom: -30px; left: -30px; z-index: 2;">
+                        <img src="{{ asset('site/img/startae-team-7tXA8xwe4W4-unsplash.jpg') }}"
+                            class="img-fluid rounded shadow-lg border border-5 border-white"
+                            alt="Expertise numérique">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeIn" data-wow-delay=".5s">
+                <h5 class="fw-bold text-uppercase" style="color: #003d7a !important; letter-spacing: 2px !important;">À propos de nous</h5>
+                <h1 class="display-5 fw-bold mb-4" style="color: #0b1c2d !important;">Découvrez <span style="color: #003d7a !important;">TIC@FRIQUE</span> et ses solutions numériques</h1>
+
+                <p class="lead mb-4" style="color: #444 !important; line-height: 1.8 !important;">
+                    <strong>TIC@FRIQUE</strong>, département de SIP dédié aux technologies de l’information, se consacre au développement de solutions innovantes pour les organisations africaines.
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center p-3 rounded-3 about-card">
+                            <i class="fas fa-laptop-code me-3"></i>
+                            <span class="fw-bold text-dark">Digitalisation & Communication</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center p-3 rounded-3 about-card">
+                            <i class="fas fa-broadcast-tower me-3"></i>
+                            <span class="fw-bold text-dark">Solutions Télécom</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center p-3 rounded-3 about-card">
+                            <i class="fas fa-cloud-upload-alt me-3"></i>
+                            <span class="fw-bold text-dark">Domaine & Hébergement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center p-3 rounded-3 about-card">
+                            <i class="fas fa-bullhorn me-3"></i>
+                            <span class="fw-bold text-dark">SMS Marketing</span>
                         </div>
                     </div>
                 </div>
@@ -57,6 +113,27 @@
     </div>
 </section>
 
+<style>
+    /* Style pour les cartes de services dans "À propos" */
+    .about-card {
+        background-color: #f8faff !important;
+        border-left: 4px solid #003d7a !important;
+        transition: all 0.3s ease;
+    }
+
+    .about-card i {
+        color: #003d7a !important;
+        font-size: 1.5rem;
+        width: 30px;
+        text-align: center;
+    }
+
+    .about-card:hover {
+        background-color: #ffffff !important;
+        box-shadow: 0 5px 15px rgba(0, 61, 122, 0.1);
+        transform: translateX(5px);
+    }
+</style>
 <section class="py-5" style="background-color: #fcfcfc !important; border-top: 1px solid #eee !important; border-bottom: 1px solid #eee !important;">
     <div class="container">
         <div class="row g-4 justify-content-center">
