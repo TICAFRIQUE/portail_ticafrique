@@ -3,10 +3,10 @@
         <div class="row g-5">
             <div class="col-lg-3 col-md-6 text-center text-md-start">
                 <a href="{{ route('ticafrique.index') }}" class="text-decoration-none">
-                    <h4 class="text-white fw-bold d-block">Tic<span class="text-info-custom">@frique</span></h4>
+                    <h4 class="text-white fw-bold d-block">TIC<span class="text-info-custom">AFRIQUE</span></h4>
                 </a>
                 <p class="mt-4 text-white-80 small">
-                    Expert en solutions technologiques, Tic@frique accompagne la transformation digitale des entreprises avec des infrastructures Cloud, Télécom et Marketing innovantes.
+                    Expert en solutions technologiques, TICAFRIQUE accompagne la transformation digitale des entreprises avec des infrastructures Cloud, Télécom et Marketing innovantes.
                 </p>
                 <div class="d-flex justify-content-center justify-content-md-start mt-3 gap-2">
                     <a href="https://facebook.com/ticafrique" class="social-btn-footer"><i class="fab fa-facebook-f"></i></a>
@@ -28,10 +28,11 @@
             <div class="col-lg-3 col-md-6 text-center text-md-start">
                 <h5 class="text-info-custom mb-4">Nos Expertises</h5>
                 <div class="d-flex flex-column gap-2">
-                    <a href="https://communication-web.ci/home" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>Digitalisation</a>
-                    <a href="https://sigma-web.ci/" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>Hébergement Cloud</a>
+                    <a href="https://communication-web.ci/home" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>Digitalisation & Communication</a>
+                                        <a href="https://sms-marketing.ci/" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>SMS Marketing</a>
+                    <a href="https://sigma-web.ci/" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>Domaine & Hébergement</a>
                     <a href="https://sigma-telecom.ci/" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>Solutions Télécom</a>
-                    <a href="https://sms-marketing.ci/" class="footer-link"><i class="fas fa-check-circle text-info-custom me-2 small"></i>SMS Marketing</a>
+
                 </div>
             </div>
 
@@ -59,7 +60,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
                 <span class="text-white-80 small">
-                    &copy; 2026 <a href="#" class="text-info-custom fw-bold text-decoration-none">Tic@frique</a>. Tous droits réservés.
+                    &copy; 2026 <a href="#" class="text-info-custom fw-bold text-decoration-none">TICAFRIQUE</a>. Tous droits réservés.
                 </span>
             </div>
             <div class="col-md-6 text-center text-md-end">
