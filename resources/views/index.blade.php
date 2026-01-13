@@ -78,7 +78,7 @@
                     <div class="stat-icon">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3>15+</h3>
+                    <h3>10+</h3>
                     <h5>Années d'Expertise</h5>
                     <p>Un savoir-faire reconnu dans le secteur des TIC.</p>
                 </div>
