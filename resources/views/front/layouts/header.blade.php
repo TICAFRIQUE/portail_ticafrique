@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="container-fluid shadow-sm bg-white navbar-main transition-all" >
+    <div class="container-fluid shadow-sm bg-white navbar-main transition-all">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light py-2" aria-label="Navigation principale">
                 <a href="{{ request()->routeIs('digital.*') ? route('digital.index') : route('ticafrique.index') }}"
@@ -71,23 +71,24 @@
                                 <li role="none">
                                     <a href="https://communication-web.ci/home"
                                         class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Digitalisation</a>
-                                </li>
-                                <li role="none">
-                                    <a href="https://sigma-web.ci/"
-                                        class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Hébergement</a>
-                                </li>
-                                <li role="none">
-                                    <a href="https://sigma-telecom.ci/"
-                                        class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Télécom</a>
+                                        role="menuitem">Digitalisation & Communication</a>
                                 </li>
                                 <li role="none">
                                     <a href="https://sms-marketing.ci/"
                                         class="dropdown-item py-2 small fw-bold"
                                         role="menuitem">SMS Marketing</a>
                                 </li>
+                                <li role="none">
+                                    <a href="https://sigma-web.ci/"
+                                        class="dropdown-item py-2 small fw-bold"
+                                        role="menuitem">Domaine & Hébergement</a>
+                                </li>
+                                <li role="none">
+                                    <a href="https://sigma-telecom.ci/"
+                                        class="dropdown-item py-2 small fw-bold"
+                                        role="menuitem">Solutions Télécom</a>
+                                </li>
+
                             </ul>
                         </li>
                         <li class="nav-item" role="listitem">
