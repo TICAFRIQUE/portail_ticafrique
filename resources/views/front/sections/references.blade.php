@@ -76,14 +76,14 @@
     .client-logo {
         max-height: 100% !important;
         width: auto !important;
-        filter: grayscale(100%) !important;
-        opacity: 0.6 !important;
+        /* filter: grayscale(0%) !important; */
+        opacity: 1 !important;
         transition: all 0.4s ease !important;
     }
 
     /* Logo en couleur au survol */
     .reference-card:hover .client-logo {
-        filter: grayscale(0%) !important;
+        /* filter: grayscale(0%) !important; */
         opacity: 1 !important;
         transform: scale(1.05) !important;
     }

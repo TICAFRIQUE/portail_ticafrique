@@ -2,18 +2,18 @@
     <div class="topbar container-fluid bg-dark py-1 d-none d-md-flex transition-all border-bottom border-secondary border-opacity-25">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex gap-3 align-items-center">
-                <small class="text-white-50" style="font-size: 0.75rem;">
-                    <i class="fas fa-map-marker-alt text-info me-1" aria-hidden="true"></i> Cocody-Angré
+                <small class="text-white" style="font-size: 1rem;">
+                    <i class="fas fa-map-marker-alt text-info me-1" aria-hidden="true" style="color: #fff !important;"></i> Cocody-Angré
                 </small>
-                <small class="text-white-50" style="font-size: 0.75rem;">
-                    <i class="fas fa-envelope text-info me-1" aria-hidden="true"></i> info@ticafrique.com
+                <small class="text-white" style="font-size: 1rem; ">
+                    <i class="fas fa-envelope text-info me-1" aria-hidden="true" style="color: #fff !important ;"></i> info@ticafrique.com
                 </small>
             </div>
             <div class="d-flex gap-3" role="list">
-                <a href="#" class="social-link-top" aria-label="Facebook">
+                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="social-link-top" aria-label="Facebook">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="social-link-top" aria-label="LinkedIn">
+                <a href="https://x.com/ticafrique" class="social-link-top" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
             </div>
@@ -247,8 +247,8 @@
 
     /* Réseaux sociaux mini */
     .social-link-top {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 0.75rem;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
         transition: color var(--transition-speed);
         display: inline-flex;
         align-items: center;

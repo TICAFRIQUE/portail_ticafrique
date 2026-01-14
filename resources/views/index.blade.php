@@ -190,18 +190,19 @@
         width: calc(250px * 10) !important;
         /* Ajuster selon nombre d'images */
         animation: scroll 30s linear infinite !important;
+       
     }
 
     .ref-logo {
         width: 180px !important;
         margin: 0 30px !important;
-        filter: grayscale(100%) !important;
-        opacity: 0.6 !important;
+        /* filter: grayscale(100%) !important; */
+        opacity: 1 !important;
         transition: 0.3s !important;
     }
 
     .ref-logo:hover {
-        filter: grayscale(0%) !important;
+        /* filter: grayscale(0%) !important; */
         opacity: 1 !important;
     }
 
