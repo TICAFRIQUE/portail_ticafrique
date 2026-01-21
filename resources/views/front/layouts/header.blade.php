@@ -5,15 +5,15 @@
                 <small class="text-white" style="font-size: 1rem;">
                     <i class="fas fa-map-marker-alt text-info me-1" aria-hidden="true" style="color: #fff !important;"></i> Cocody-Angré
                 </small>
-                <small class="text-white" style="font-size: 1rem; ">
-                    <i class="fas fa-envelope text-info me-1" aria-hidden="true" style="color: #fff !important ;"></i> info@ticafrique.com
+                <small class="text-white" style="font-size: 1rem;">
+                    <i class="fas fa-envelope text-info me-1" aria-hidden="true" style="color: #fff !important;"></i> info@ticafrique.com
                 </small>
             </div>
             <div class="d-flex gap-3" role="list">
-                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="social-link-top" aria-label="Facebook">
+                <a href="https://www.facebook.com/ticafrique?_rdc=1&_rdr" class="social-link-top" aria-label="Facebook" target="_blank">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
-                <a href="https://x.com/ticafrique" class="social-link-top" aria-label="LinkedIn">
+                <a href="https://x.com/ticafrique" class="social-link-top" aria-label="LinkedIn" target="_blank">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
             </div>
@@ -71,26 +71,30 @@
                                 <li role="none">
                                     <a href="https://communication-web.ci/home"
                                         class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Digitalisation & Communication</a>
+                                        role="menuitem"
+                                        target="_blank">Digitalisation & Communication</a>
                                 </li>
                                 <li role="none">
                                     <a href="https://sms-marketing.ci/"
                                         class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">SMS Marketing</a>
+                                        role="menuitem"
+                                        target="_blank">SMS Marketing</a>
                                 </li>
                                 <li role="none">
                                     <a href="https://sigma-web.ci/"
                                         class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Domaine & Hébergement</a>
+                                        role="menuitem"
+                                        target="_blank">Domaine & Hébergement</a>
                                 </li>
                                 <li role="none">
                                     <a href="https://sigma-telecom.ci/"
                                         class="dropdown-item py-2 small fw-bold"
-                                        role="menuitem">Solutions Télécom</a>
+                                        role="menuitem"
+                                        target="_blank">Solutions Télécom</a>
                                 </li>
-
                             </ul>
                         </li>
+
                         <li class="nav-item" role="listitem">
                             <a href="{{ route('ticafrique.about') }}"
                                 class="nav-link {{ request()->routeIs('ticafrique.about') ? 'active-link' : '' }}"
@@ -122,6 +126,7 @@
         </div>
     </div>
 </div>
+
 
 <style>
     :root {
